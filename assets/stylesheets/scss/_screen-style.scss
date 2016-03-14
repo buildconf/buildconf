@@ -1,0 +1,787 @@
+body > nav {
+
+  @include media-upto($bp-xl) {
+    background-color: white;
+    border-bottom: solid 1px gray(90%);
+  }
+  
+  .background {
+    background-color: white;
+  }
+
+  @include media-upto($bp-xl) {
+    > div:before {
+      content: "";
+      display: block;
+
+      width: flex-grid(3);
+      position: absolute;
+      height: $nav-height;
+ 
+      background-image: url('../../images/logo-2013.svg');
+      .no-svg & { background-image: url('../../images/logo-2013@2x.png'); }
+      background-repeat: no-repeat;
+      background-size: auto ($nav-height - 28);
+      background-position: center;
+
+      opacity: 0.0;
+      @include transition(all 0.25s linear);
+    }
+
+    &.wide > div:before {
+      opacity: 1.0;
+    }
+  }
+
+  @include media-upto($bp-m) {
+    > div:before {
+      float: none;
+      width: $nav-height;
+      position: absolute;
+      left: 50%;
+      margin-left: (-$nav-height / 2);
+    }
+  }
+
+  ul {
+    font-size: 0.8em;
+    font-weight: 500;
+    
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+
+    @include media-from($bp-xl) {
+      border-bottom: solid 1px gray(90%);
+    }
+
+  }
+
+  li {
+    @include media-upto($bp-m) {
+      text-align: center;
+
+      + li { border-top: solid 1px gray(90%); }
+    }
+  }
+
+  a {
+    display: block;
+    
+    text-decoration: none;
+    outline: none;
+    
+    @include transition(color 0.1s linear);
+                        color: gray(60%);
+    &:hover, &:focus {  color: gray(30%); }
+    &.current        {  color: $color-gold; }
+    
+    &.register       {  color: gray(40%); font-weight: 600; }
+    &.register:hover,
+    &.register:focus {  color: gray(10%); }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+body > header {
+
+
+  > div {
+
+    @include media-upto($bp-xl) {
+      padding-top:    flex-gutter()*4;
+      padding-bottom: flex-gutter()*4;
+
+      background-image: url('../../images/diamonds_bg.png');
+      @include hidpi { background-image: url('../../images/diamonds_bg@2x.png'); } 
+      background-position:   top center;
+      background-size: auto 100%;
+    }
+
+  }
+
+  
+  @include media-from($bp-xl) {
+
+    .pattern {
+      background-image: url('../../images/diamonds_bg.png');
+      @include hidpi {  background-image: url('../../images/diamonds_bg@2x.png'); }    
+      background-position: center right;
+      background-size:     160% auto;
+    }
+    
+    .pattern:after { 
+      @include linear-gradient(rgba(#F2F2F2, 0.0), #F2F2F2);
+    }
+  }
+
+
+  .pattern p {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    word-spacing:   0.15em;
+    color: gray(60%);
+    text-align: center;
+
+    @include media-between($bp-m, $bp-xl) {
+      padding-top: 2.5em;
+
+                      text-align: left;
+      &:first-child { text-align: right; }
+    }
+  }
+
+  .pattern figure {
+    
+    @include media-upto($bp-m)  { @include margin-v(flex-gutter()*2); }
+    @include media-from($bp-xl) { @include margin-v(3.5em); }
+    
+    img {
+      display: block;
+      @include centered;
+      height: (2 * 2.5em);
+      @include media-from($bp-xl) {
+        height: (2 * 4em);
+      }
+    }
+  }
+
+  .main {
+
+    color: $color-gold;
+    line-height: 1.9em;
+
+    @include media-upto($bp-xl) {
+      text-align: center;
+      padding-bottom: 0;
+    }
+    
+    @include media-upto($bp-m) {
+      @include padding-h(flex-gutter()*4);
+    }
+
+    @include media-between($bp-m, $bp-xl) {
+      @include padding-h(flex-gutter()*2);
+    }
+
+
+  }
+
+  .main h2 {
+
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    margin-top:     0.25em;
+    margin-bottom:  0.25em;
+    
+    @include media-upto($bp-xl) {
+      line-height: 1.6;
+      letter-spacing: 0.1em;
+      
+      max-width: 25em;
+      @include centered;
+      margin-top:     3.5em;
+      margin-bottom:  3em;
+    }
+
+    @include media-upto($bp-m) {
+      margin-top:    flex-gutter()*3;
+      margin-bottom: flex-gutter();
+    }
+
+  }
+
+  .main p {
+    font-weight: 300;
+    color: gray(60%);
+    max-width: 40em;
+
+    @include media-upto($bp-xl) {
+      @include centered;
+      max-width: 35em;
+    }
+  }
+
+}
+
+
+
+
+
+
+.module > div {
+  @include media-from($bp-xl) {
+    background: {
+      image:    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP49OnTfwAJhgPWqxlLWwAAAABJRU5ErkJggg==');
+      size:     flex-grid(5) 1px;
+      position: top left;
+      repeat:   repeat-y; 
+    }
+  }
+}
+
+
+.module header {
+
+  @include media-upto($bp-xl) {
+    border-top: solid 1px gray(90%);
+    border-bottom: solid 1px gray(90%);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP49OnTfwAJhgPWqxlLWwAAAABJRU5ErkJggg==');
+  }
+
+  h2, h1 {
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+
+  @include media-from($bp-xl) {
+              h2 { border-top: solid 1px white; padding-top: 3em; }
+    &.sticky  h2 { border-top-color: transparent; }
+  }
+
+  h2 {
+    font-size: 0.9em;
+    font-weight: 400; 
+    color: gray(40%);
+    letter-spacing: 0.1em;
+
+    margin-bottom: 0.5em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include transition(border-top 0.25s linear);
+
+    .hour, .slash {
+      color: gray(75%);
+      font-weight: 400;
+    }
+  }
+
+  h1 {
+    font-size: 2.1em;
+    letter-spacing: 0.05em;
+    font-weight: 200;
+    color: $color-gold;
+    line-height: 1.4em;
+    
+    @include media-upto($bp-m) {
+      margin-top:   -0.2em;
+      margin-bottom: 0.6em;
+    }
+
+    @include media-between($bp-m, $bp-xl) {
+      margin-top: -0.3em;
+      margin-bottom: 0.7em;
+    }
+
+    @include media-from($bp-xl) {
+      text-indent: -0.07em;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    color: gray(50%);
+    
+    @include lh;
+
+    @include media-upto($bp-m) {
+      max-width:      32em;
+    }
+    
+    @include media-from($bp-xl) {
+      max-width:      22em;
+      margin-top:     3.3em;
+    }
+
+    + p {
+      margin-top: 1.5em;
+    }
+
+    .foursquare-button {
+      float: left;
+      margin-right: 0.5em;
+      position: relative;
+      margin-top: 0.2em;
+      @include media-upto($bp-s) {
+        margin-top: -0.15em;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      text-decoration: none;
+      color: $color-gold;
+      @include transition(color 0.1s linear);
+      &:hover, &:focus {
+        color: gray(30%);
+      }
+    }
+  }
+
+  @include media-upto($bp-m) {
+    h2, h1, p {
+      padding-right: flex-gutter()*2;
+    }
+
+    h2 {
+      margin-bottom: flex-gutter();
+    }
+
+    dl {
+      margin-top: flex-gutter()*2;
+    }
+  }
+
+  dl {
+    font-size: 0.85em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: gray(55%);
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    word-spacing:   0.1em;
+    @include media-from($bp-xl) {
+      margin-top: (4em/0.85);
+    }
+  }
+
+  dt, 
+  dd {
+
+    border-top: solid 1px transparent;
+
+    @include media-upto($bp-xl) {
+      padding-top:    1.2em;
+      padding-bottom: 1.2em;
+    }
+
+    @include media-from($bp-xl) {
+      padding-top:    1.4em;
+      padding-bottom: 2.4em;
+    }
+
+  }
+
+  dt {
+    border-top-color: gray(75%);
+    font-weight: 500;
+    color: gray(45%);
+  }
+
+  dd {
+    border-top-color: gray(80%);
+
+    @include media-upto($bp-xl) {
+      padding-right: 1.5em;
+    }
+    
+    .hour {
+      padding-left: 0.2em;
+    }
+
+    a {
+      text-decoration: none;
+      &:after { content: "\00a0\2192"; }
+      @include transition(color 0.1s linear);
+                          color: inherit;
+      &:hover, &:focus {  color: gray(30%);  }
+    }
+  }
+
+}
+
+
+
+
+
+%events-section {
+  font-size: 1.1em;
+  line-height: 1.3;
+  color: gray(50%);
+  
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+
+  padding-top:    2.3em;
+  padding-bottom: 3.7em;
+
+  @include media-upto($bp-m) {
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+  }
+
+  border-top: solid 1px gray(90%);
+
+  margin-top: (4em / 1.1) * 2;
+  @include media-upto($bp-m) {
+    margin-top: 6em;
+  }
+  &:first-child { margin-top: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Style
+
+@include media-upto($bp-m) {
+  %event-time,
+  %event-title,
+  %event-subtitle,
+  %event-description p,
+  %event-description .video {
+    padding-right: flex-gutter()*2;
+  }
+}
+
+%event + %event {
+  margin-top: 4em;
+  @include media-upto($bp-m) {
+    margin-top: flex-gutter()*4;
+  }
+}
+
+%event-description  + %event-title,
+%event-aside        + %event-title {
+  margin-top: 2.3em;
+  @include media-upto($bp-m) {
+    margin-top: flex-gutter()*2.3;
+  }
+}
+
+%event-time {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.15em;
+  color: gray(30%);
+
+  border-top: solid 1px $color-gold;
+  padding-top: 3em;
+  
+  .hour, .slash { color: gray(70%); font-weight: 300; }
+  .slash { @include padding-h(0.3em); }
+
+  @include media-upto($bp-m) {
+    @include padding-v(1.5em);
+  }
+
+  @include media-from($bp-m) {
+    height: 4em;
+    overflow: visible;
+
+    .slash {
+      display: block;
+      height: 1.5em;
+      visibility: hidden;
+    }
+  }
+}
+
+%event-title {
+  font-size: 1.1em;
+  line-height: 1.3;
+  
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  
+  color: $color-gold;
+  
+  border-top: solid 1px gray(90%);
+
+  padding-top: 2.3em;
+  @include media-upto($bp-m) {
+    padding-top: 1.5em;
+    padding-right: flex-gutter()*2;
+  }
+}
+
+%event-subtitle {
+  font-size: 0.9em;
+  line-height: 1.4;
+  
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  color: gray(80%);
+
+  margin-top:     0.5em;
+  margin-bottom:  (1.8em / 0.9);
+
+  @include media-upto($bp-s) {
+    .br {
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+
+  @include media-upto($bp-m) {
+    margin-bottom: (1.5em / 0.9);
+    padding-right: flex-gutter()*2;
+  }
+
+  a {
+    text-decoration: none;      
+    @include transition(color 0.1s linear);
+                        color: gray(65%);
+    &:hover, &:focus {  color: gray(40%); }
+  }
+
+  .location {
+    &:before { content: "\21B3\00a0"; color: $color-gold; }
+  }
+}
+
+%event-subsubtitle {
+  font-size: 0.9em;
+  line-height: 1.3;
+  
+  font-weight: 400;
+  color: gray(60%);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+
+  margin-top:    3em;
+  margin-bottom: 0.5em;
+}
+
+%event-description {
+  @include lh;
+  font-weight: 300;
+  color: gray(40%);
+
+  .video {
+    margin-bottom: 1.8em;
+    @include media-upto($bp-m) {
+      max-width: 38em;
+    }
+  }
+
+  p {
+    max-width: 38em;
+  }
+
+  p + p {
+    margin-top: 1em;
+  }
+
+  a {
+    font-weight: 400;
+    text-decoration: none;
+    
+    @include transition(color 0.1s linear);
+
+                        color: $color-gold;
+    &:hover, &:focus {  color: black; }
+  }
+}
+
+%event-speaker-bio {
+  color: gray(70%);
+  @include media-from($bp-m) {
+    margin-bottom: 3em;
+  }
+}
+
+%event-aside {
+
+  @include media-upto($bp-m) {
+    margin-top: 1em;
+  }
+
+  ul {
+    line-height: 1.8em; 
+    @include media-upto($bp-m) {
+      @include clearfix;
+    }
+  }
+
+  li {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    @include media-from($bp-m) {
+      line-height: (1.8em / 0.8);
+    }
+  }
+
+  @include media-upto($bp-m) {
+    li { float: left; }
+    li + li:before {
+      content: "/";
+      color: gray(80%);
+      @include padding-h(0.6em);
+    }
+  }
+ 
+  a {
+    @include media-from($bp-m) { 
+      display: block;
+    }
+
+    text-decoration: none;
+    @include transition(color 0.1s linear);
+    
+                        color: gray(80%);
+    &:hover, &:focus {  color: gray(50%); }
+
+    @include media-upto($bp-m) {
+                          color: gray(60%);
+      &:hover, &:focus {  color: gray(30%); }      
+    }
+  }
+
+  figure img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+%event-speaker-photo {
+  @include media-upto($bp-m) {
+    display: none;
+  }
+  @include media-from($bp-m) {
+    margin-top: -1.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Sponsors */
+
+.sponsors {
+
+  > * {
+    border-top: solid 1px gray(90%);
+    
+    padding-top: 2em;
+    padding-bottom: 4em;
+    
+    @include media-upto($bp-m) {
+      padding-top: 1.5em;
+      padding-bottom: 2em;
+    }
+
+    &.stray {
+      padding-bottom: 0;
+    }
+                        
+  }
+
+  a {
+    height: 4em;
+    @include media-upto($bp-m) {
+      height: 3em;
+    }
+    display: block;
+                        opacity: 0.5;
+    &:hover, &:focus {  opacity: 1.0; }
+  }
+  
+  img { max-height: 100%; }
+
+}
+
+
+
+
+/* Footer */
+
+body > footer .main {
+
+  > * {
+    line-height: 1.65;
+    font-weight: 300;
+    color: gray(50%);
+    border-top: solid 1px gray(90%);
+  }
+
+  @include media-upto($bp-m) {
+    > * + * {
+      margin-top: flex-gutter()*2;
+    }
+  }
+
+  .credits      { border-top: none; }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color: gray(40%);
+
+    @include media-upto($bp-m) {
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+    }
+  }
+
+  .credits {
+    font-size: 0.85em;
+
+        color: gray(70%);
+    a { color: gray(60%); }
+
+    strong {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-right: 1em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    @include transition(color 0.1s linear);
+                        color: $color-gold;
+    &:hover, &:focus {  color: black; }
+  }
+
+  .previous h4 {
+    display: inline-block;
+    width: 3em;
+    font-weight: 400;
+  }
+
+  .previous a {
+    display: inline-block;
+    margin-left: 1.2em;
+  }
+}

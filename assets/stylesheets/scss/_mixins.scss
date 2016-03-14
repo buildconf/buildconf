@@ -1,0 +1,131 @@
+// V/H Margin
+@mixin margin-h($val) { margin-left: $val;  margin-right: $val; }
+@mixin margin-v($val) { margin-top: $val;   margin-bottom: $val; }
+
+// V/H Padding
+@mixin padding-h($val) { padding-left: $val;  padding-right: $val; }
+@mixin padding-v($val) { padding-top: $val;   padding-bottom: $val; }
+
+// Center a block element
+@mixin centered { @include margin-h(auto); }
+
+
+
+// Grayscale Colors
+@function gray($lightness) {
+  @return hsl(0, 0%, $lightness);
+}
+
+
+
+// Hyphenation
+@mixin hyphenated {
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+
+
+// CLEARFIX
+// Adapted from http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  *zoom: 1;
+}
+
+// For module-like usage
+%clearfix {
+  @include clearfix;
+}
+
+// Image replacement (from H5BP)
+%ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+
+  &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 150%;
+  }
+}
+
+// Hidden content (from H5BP)
+%hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+// Visually hidden (from H5BP)
+%visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+
+// GRID
+// Creates a fluid grid, with $cols columns with a percentage $gap
+// Instructions: Use the mixin in the grid *wrapper*.
+@mixin grid($cols, $gap: 3%, $float: left) {
+  
+  @include clearfix;
+
+  > * {
+    float: $float;
+    margin-#{$float}: $gap;
+
+    width: (100% - ($cols - 1) * $gap) / $cols;
+
+    &:nth-child(#{$cols}n+1) {
+      clear: $float;
+      margin-#{$float}: 0;
+    }
+
+    &:nth-child(#{$cols}+1) {
+      margin-bottom: $gap;
+    }
+  }
+  
+}
+
+
+
+// MEDIA QUERIES
+// Readable media query mixins.
+@mixin media-between($start, $end) {
+  @media screen and (min-width: $start) and (max-width: ($end - 1)) {
+    @content;
+  }
+}
+@mixin media-from($start) {
+  @media screen and (min-width: $start) {
+    @content;
+  }
+}
+@mixin media-upto($end) {
+  @media screen and (max-width: ($end - 1)) {
+    @content;
+  }
+}

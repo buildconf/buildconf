@@ -1,0 +1,19 @@
+$grid-columns: 16;
+$max-width: 1400px;
+
+$column: 60px;
+$gutter: 40px;
+
+$color-gold: #B99A54;
+$color-almost-black: gray(20%);
+
+$nav-height: 55px;
+
+$bp-xl: 1050px;
+$bp-m:  700px;
+$bp-s:  400px;
+
+@mixin lh {
+                                          line-height: 1.8;
+  @include media-upto($bp-s)            { line-height: 1.65; }
+}

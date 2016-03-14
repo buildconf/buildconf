@@ -1,0 +1,507 @@
+body > * > div {
+  @include outer-container;
+  margin: 0;
+  position: relative; // for fixed sticky bottoms
+}
+
+
+
+
+
+
+body > nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 10;
+
+  @include media-between($bp-m, $bp-xl) { padding-left: flex-gutter(); }
+  @include media-from($bp-m)            { ul { @include row; } }
+
+  // Descendants
+  .background, ul, li, a            { height: $nav-height; }
+  a                                 { line-height: $nav-height; }
+  .background                       { @include box-sizing(content-box); }
+  @include media-from($bp-xl) { ul  { height: $nav-height + 1; }  }
+  
+
+  @include media-from($bp-xl) { 
+
+    .background {
+      @include span-columns(9);
+      float: right;
+    }
+
+    &.wide .background {
+      @include span-columns(11);
+      float: right;
+    }
+  }
+
+  
+  @include media-upto($bp-m) {
+
+    .background {
+      width: $nav-height;
+      float: right;
+      cursor: pointer;
+                  background-image: url('../../images/nav-button.svg');
+      .no-svg & { background-image: url('../../images/nav-button@2x.png'); }
+      background-size: 23px 17px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    ul {
+      outline: none;
+      display: none;
+
+      position: absolute;
+      top: $nav-height;
+      height: auto !important;
+      left: 0; right: 0;
+
+      border: solid 1px gray(90%) !important;
+    }
+    
+    .no-js &  .background:hover     ul,
+              .background.expanded  ul { display: block; }
+
+    li {
+      display: block;
+      background-color: white;
+    }
+  }
+
+
+  @include media-between($bp-m, $bp-xl) {
+    ul {
+      @include span-columns(13);
+      float: right;
+    }
+
+    li {
+      float: left;
+      padding-right: 1em;
+      + li { margin-left: 3%; }
+    }
+  }
+
+  @include media-from($bp-xl) {
+    &.wide ul { 
+      @include span-columns(9 of 11);
+      float: right;
+    }
+
+    li {
+      float: left;
+      padding-right: 1em;
+      + li { margin-left: 4%; }
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+body > header {
+  @include media-upto($bp-xl) {
+    margin-top: $nav-height;
+  }
+}
+
+
+body > header .pattern {
+
+  @include media-between($bp-m, $bp-xl) {
+    @include row;
+    > p   { @include span-columns(6); }
+    > h1  { @include span-columns(4); }
+  }
+
+  @include media-from($bp-xl) {
+    
+    @include padding-v(flex-gutter() * 6);
+    @include span-columns(5);
+    
+    > * {
+      width: 200%;
+    }
+    
+    position: relative;
+    
+    &:after {
+      content: "";
+      display: block;
+      
+      width: 100%;
+      height: flex-gutter(5)*2;
+      position: absolute; bottom: 0;
+    }
+
+  }
+
+}
+
+body > header .main {
+
+  @include media-from($bp-xl) {
+    margin-top: flex-gutter() * 6;
+    padding-top: 4.3em;
+    
+    @include span-columns(9);
+    float: right;
+
+    > * { @include span-columns(8 of 9); }
+  }
+
+}
+
+
+
+
+
+
+@include media-upto($bp-xl) {
+  section.module + section.module {
+    padding-top:  $nav-height;
+  }
+  // body > header + section {
+  //   padding-top: $nav-height;
+    
+  //   background-image: url('../../images/diamonds_bg.png');
+  //   @include hidpi { background-image: url('../../images/diamonds_bg@2x.png'); }
+  //   background-attachment: fixed;      
+  //   background-position:   center center;
+  //   background-size:       600px auto;
+
+  //   .main { background-color: white; }
+  // }
+}
+
+.module header,
+.module .main {
+  @include media-upto($bp-m) {
+    padding-left:   flex-gutter()*2;
+  }
+
+  @include media-between($bp-m, $bp-xl) {
+    padding-left:   flex-gutter();
+  }
+}
+
+.module header {
+
+  @include media-upto($bp-m) {
+    padding-top:    flex-gutter()*2.5;
+    padding-bottom: flex-gutter()*2;
+    dl {
+      @include row;
+      dt { display: none; }
+      dd { @include span-columns(8); }
+      margin-bottom: (-1 * flex-gutter());
+    }
+  }
+
+  @include media-between($bp-m, $bp-xl) {
+    @include row;
+    @include padding-v(flex-gutter()*2.5);
+
+    h2 {
+      @include span-columns(3);
+    }
+
+    h1 {
+      @include span-columns(10);
+    }
+
+    p {
+      @include span-columns(9);
+      @include shift(3);
+    }
+
+    dl {
+      @include span-columns(3);
+      float: right;
+      margin-bottom: -2em;
+      dt { display: none; }
+    }
+  }
+
+  
+  @include media-from($bp-xl) {
+
+    @include span-columns(5);
+    // max-width needs to be set due to position: fixed when sticky
+    max-width: flex-grid(5) / 100% * $max-width;
+
+    &.sticky                { position: fixed;    top: 0; }
+    &.sticky.sticky-bottom  { position: absolute; top: auto; bottom: 0; }
+    
+    // instead of padding on the element, the children must have margin
+    > * {
+      $gutter-in: flex-gutter(5);
+      @include margin-h($gutter-in);
+      &:first-child { margin-top:     $nav-height; }
+      &:last-child  { margin-bottom:  $gutter-in * 5; }
+    }
+  }
+
+  @include media-from($bp-xl) {
+    dl {
+      @include row;
+      dt { @include span-columns(1.5 of 5); clear: both; }
+      dd { @include span-columns(3.5 of 5); @include omega; }
+    }
+  }
+}
+
+@include media-upto($bp-xl) {
+  #sponsors.module  header, 
+  footer.module     header { @include padding-v(flex-gutter()*2); }
+}
+
+
+
+
+
+
+
+
+.module .main {
+
+  @include media-upto($bp-m) {
+    padding-top:    flex-gutter()*2;
+    padding-bottom: flex-gutter()*2;
+  }
+
+  @include media-upto($bp-s) {
+    padding-top: flex-gutter()*3;
+  }
+  
+  @include media-between($bp-m, $bp-xl) {
+    clear: both;
+    @include row;
+    padding-top:    flex-gutter() * 2;
+    padding-bottom: flex-gutter() * 4;
+  }
+
+  @include media-from($bp-xl) { 
+    @include span-columns(11); 
+    float: right;
+
+    padding-top:    $nav-height;
+    padding-bottom: flex-gutter()*6;
+  }
+
+}
+
+#sponsors.module  .main { padding-bottom: flex-gutter()*4; }
+footer.module     .main { 
+  padding-bottom: flex-gutter();
+  @include media-upto($bp-m) {
+    padding-bottom: flex-gutter()*2;
+  }
+}
+
+
+
+%event { 
+  @include row;
+}
+
+%events-section {
+  @include media-between($bp-m, $bp-xl) {
+    margin-left: flex-grid(3) + flex-gutter();
+  }
+
+  @include media-from($bp-xl) { 
+    margin-left: flex-grid(2, 11) + flex-gutter(11);
+  }
+}
+
+%event-time,
+%event-aside {
+
+  @include media-between($bp-m, $bp-xl) {
+    @include span-columns(3);
+  }
+
+  @include media-from($bp-xl) { 
+    @include span-columns(2 of 11);
+  }
+
+}
+
+%event-aside {
+  @include media-from($bp-m) {
+    float: right;
+  }
+}
+
+
+%event-title {
+
+  @include media-between($bp-m, $bp-xl) {
+    @include span-columns(13);
+    @include omega;
+    @include shift(3);
+  }
+
+  @include media-from($bp-xl) { 
+    @include span-columns(9 of 11);
+    @include omega;
+    @include shift(2);
+  }
+
+}
+
+%event-time + %event-title {
+
+  @include media-from($bp-m) { 
+    margin-left: 0;
+  }
+
+}
+
+%event-subtitle {
+
+  @include media-between($bp-m, $bp-xl) {
+    @include span-columns(13);
+    @include shift(3);
+    @include omega;
+  }
+
+  @include media-from($bp-xl) { 
+    @include span-columns(9 of 11);
+    @include shift(2);
+    @include omega;
+  }
+
+}
+
+%event-description {
+
+  @include media-between($bp-m, $bp-xl) {
+    @include span-columns(10);
+    @include shift(3);
+  }
+
+  @include media-from($bp-xl) {
+    @include span-columns(7 of 11);
+    @include shift(2);
+  }
+}
+
+%event-subsubtitle {
+  clear: both;
+
+  @include media-between($bp-m, $bp-xl) {
+    @include span-columns(10);
+    @include shift(3);
+  }
+
+  @include media-from($bp-xl) {
+    @include span-columns(7 of 11);
+    @include shift(2);
+  }
+}
+
+%event-speaker-photo {
+  float: left;
+}
+
+%event-speaker-photo + %event-speaker-bio {
+  @include media-from($bp-m) {
+    margin-left: 0;
+  }
+  @include media-between($bp-m, $bp-xl) {
+    margin-right: flex-gutter() !important;
+  }
+  @include media-from($bp-xl) {
+    margin-right: flex-gutter(11) !important;
+  }
+}
+
+.sponsors {
+
+  @include row;
+
+  > * {
+
+    @include media-upto($bp-m) {
+      @include span-columns(8);
+    }
+    
+    @include media-between($bp-m, $bp-xl) {
+      @include span-columns(7);
+    }
+    @include media-from($bp-xl) {
+      @include span-columns(5 of 11);
+    }
+    
+    &:nth-child(odd)  {
+      clear: left;
+    }
+
+    &:nth-child(even) {
+      @include media-upto($bp-m) {
+        @include span-columns(8);
+        @include omega;
+      }
+
+      @include media-between($bp-m, $bp-xl) {
+        @include span-columns(9);
+        @include omega;
+      }
+      @include media-from($bp-xl) {
+        @include span-columns(6 of 11);
+        @include omega;
+      }
+    }
+
+    &.stray {
+      @include fill-parent;
+    }
+                        
+  }
+}
+
+
+body > footer .main {
+
+  .credits {
+    clear: both;
+  }
+
+  @include media-between($bp-m, $bp-xl) {
+    .contact      { @include span-columns(3); }
+    .about        { @include span-columns(6); }
+    .previous     { @include span-columns(7); @include omega; float: right; }
+    .previous > * { @include span-columns(6 of 7); }
+
+    .credits {
+      padding-top:    flex-gutter();
+      padding-right:  flex-gutter();
+    }
+  }
+
+  @include media-from($bp-xl) {
+    .contact      { @include span-columns(2 of 11); }
+    .about        { @include span-columns(4 of 11); }
+    .previous     { @include span-columns(5 of 11); @include omega; float: right; }
+    .previous > * { @include span-columns(4 of 5); }
+    
+    .credits {
+      padding-top:    flex-gutter(11);
+      padding-right:  flex-gutter(11);
+    }
+  }
+}

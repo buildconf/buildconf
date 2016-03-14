@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <!-- Title and Meta -->
+  <title>Build 2013</title>
+  <meta name="description" content="Build 2013 — 11–14 Nov 2013 / Belfast, N. Ireland" />
+
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="//cloud.typography.com/7116032/698582/css/fonts.css" />
+  <link rel="stylesheet" media="screen" href="assets/stylesheets/css/main.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div>
+      <h1 class="topbar_logo"><a href="/">Build</a></h1>
+
+      <p class="topbar_left">
+        11&ndash;14 Nov 2013 / Belfast, N. Ireland
+      </p>
+
+      <ul class="topbar_links">
+        <li><a href="http://blog.buildconf.com">Blog</a></li>
+        <li><a href="/attendees">Attendees</a></li>
+        <li><a class="topbar_link-cta" href="http://register.buildconf.com">Register</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div>
+      <h1 class="intro_title">Attendees</h1>
+      <p class="intro_text">Every year, Build attracts a community of talented, hard-working designers, travelling to Belfast from all across the world.</p>
+    </div>
+  </section>
+
+  <section class="attendees">
+    <div>
+      <ul id="attendees_list" class="attendees_list">
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <p class="footer_copyright">Made by <a href="https://twitter.com/fictionco">Fiction</a> <span class="middot">&middot;</span> Email: <a href="mailto:hi@buildconf.com">hi@buildconf.com</a> <span class="middot">&middot;</span> Twitter: <a href="https://twitter.com/buildconf">@buildconf</a></p>
+    </div>
+  </footer>
+  
+  <!-- Handlebars templates -->
+  <script id="attendee_template" type="text/x-handlebars-template">
+    {{#each attendees}}
+    {{#if name}}
+    <li>
+      <figure class="{{random_diamond_class}}">
+        {{#if twitter_avatar_url}}
+          <img src="{{twitter_avatar_url}}" alt="" />
+        {{else}}
+          <img src="assets/images/attendees/avatar-placeholder.png" alt="" />
+        {{/if}}
+      </figure>
+      <h3>{{name}}</h3>
+      {{#if twitter}}<p><a href="https://twitter.com/{{twitter}}">@{{twitter}}</a></p>{{/if}}
+    </li>
+    {{/if}}
+    {{/each}}
+  </script>
+  <!-- Custom JS -->
+  <script src="assets/javascripts/main.min.js"></script>
+  <!-- Respond.js -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.min.js"></script>
+  <!-- Gauges -->
+  <script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4e776a1df5a1f54153000005');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+</body>
+</html>
