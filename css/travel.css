@@ -1,0 +1,14 @@
+#travel h3 {
+  font-family: "kulturista-web", Georgia, Times, serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 21px;
+  text-align: center;
+  }
+
+#travel p {
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0 0 21px;
+  }

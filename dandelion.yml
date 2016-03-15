@@ -1,0 +1,11 @@
+# Required
+scheme: sftp
+host: ve.8jdgylhp.vesrv.com
+username: www-data
+password: f4nEJEWz2YbB
+
+# Optional
+path: beta
+exclude:
+    - .git
+revision_file: .revision

@@ -1,0 +1,743 @@
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+  }
+
+::selection {
+  background: #191818;
+  color: #fff;
+  text-shadow: none;
+}
+
+body {
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  font-family: "proxima-nova-1","proxima-nova-2", 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: #666;
+  -webkit-text-size-adjust: none;
+  }
+
+p, ol, ul, dl, dt, dd, blockquote {
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0 0 21px;
+  }
+
+li, dt, dd {
+  margin-left: 21px;
+  }
+
+strong {
+  font-weight: 600;
+  }
+
+img {
+  max-width: 100%;
+  }
+
+hr {
+  border: 0;
+  border-top: 1px dashed #d0d0d0;
+  margin: 18px 0;
+  padding: 0;
+  height: 0;
+  clear: both;
+  }
+
+a {
+  color: #e41f3a;
+  cursor: pointer;
+  text-decoration: none;
+  }
+
+a:hover {
+  color: #333332;
+  text-decoration: underline;
+  }
+
+h2 {
+  font-family: "kulturista-web-1","kulturista-web-2", Georgia, Times, serif;
+  font-size: 38px;
+	line-height: 42px;
+	color: #333;
+	margin-bottom: 21px;
+	text-align: center;
+	padding: 0 0 30px;
+	background: url(images/nuts_white_red.gif) 50% 100% no-repeat;
+  text-align: center;
+  }
+
+h3 {
+  font-family: "kulturista-web-1","kulturista-web-2", Georgia, Times, serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 21px;
+  text-align: center;
+  }
+
+h3 a,
+h3 a:hover {
+  color: #fff;
+  }
+  
+h4 {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 1px!important;
+  font-size: 11px;
+  line-height: 21px;
+  margin-bottom: 2px;
+  text-align: center;
+  }
+
+header {
+  background: #191818 url(images/header_bg.png) 50% 0 repeat-x;
+  color: #fff;
+  text-align: center;
+  padding: 130px 0 100px;
+  min-height: 325px;
+  }
+
+header #logo {
+  height: 60px;
+  width: 59px;
+  display: block;
+  margin: 0 auto 73px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(images/logo.gif) 0 0 no-repeat;
+  }
+
+header .date_loc {
+  color: #777;
+  position: absolute;
+  top: 149px;
+  left: 50%;
+  width: 550px;
+  margin: 0 0 0 -275px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  }
+
+header .date_loc em {
+  display: none;
+  font-style: normal;
+  padding: 0 3px;
+  }
+
+header .date,
+header .loc {
+  display: block;
+  float: left;
+  width: 200px;
+  text-align: left;
+  }
+
+header .loc {
+  float: right;
+  text-align: right;
+  margin-right: -1px;
+  }
+
+section {
+  padding: 75px 0 95px;
+  }
+
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  }
+
+.intro {
+  font-family: "kulturista-web-1","kulturista-web-2", Georgia, Times, serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 28px;
+  margin: 0 auto 32px;
+  max-width: 700px;
+  text-align: center;
+  }
+
+.speaker_list {
+  font-family: "kulturista-web-1","kulturista-web-2", Georgia, Times, serif;
+  }
+
+.speaker_list.bot {
+  max-width: 75%;
+  margin: 0 12.5%;
+  }
+
+.speaker_list.top {
+  margin-bottom: 21px;
+  }
+
+.speaker_list li {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  }
+
+.speaker_list.bot li {
+  width: 30.6%;
+  }
+
+.speaker_list h3 {
+  color: #fff;
+  margin: 0;
+  }
+  
+.row,
+.speaker_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+.row > li,
+.speaker_list li {
+  float: left;
+  margin: 0 2%;
+  padding: 0;
+  width: 22%;
+  overflow: hidden;
+  }
+
+.row > li.first,
+.speaker_list li.first {
+  margin-left: 0;
+  }
+
+.row > li.last,
+.speaker_list li.last {
+  margin-right: 0;
+  }
+
+.row li.colspan-2 {
+  margin-right: 0;
+  width: 48%;
+  }
+
+.row .img_wrap {
+  display: block;
+  background: #e41f3a;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  }
+
+.index .row .desc_wrap {
+  display: block;
+  padding: 27px 0;
+  background: #fff url(images/tri_red.png) 50% 0 no-repeat;
+  }
+
+.row li p {
+  color: #808080;
+  margin: 0;
+  } 
+
+.row li li {
+  color: #808080;
+  }
+
+section {
+  background: #fff url(images/section_divider.png) 50% 100% repeat-x;
+  }
+
+section .intro {
+  color: #999;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 auto 48px;
+  text-align: center;
+  font-family: "proxima-nova-1","proxima-nova-2", 'Helvetica Neue', Arial, sans-serif;
+  max-width: 560px;
+  }
+
+section#conference {
+  background: #e41f3a url(images/conf_bg.png) 50% 100% repeat-x;
+  border: 0;
+  padding-bottom: 240px;
+  margin-bottom: 10px;
+  }
+
+section#conference .intro {
+  color: #ff9fac;
+  margin-bottom: 21px;
+  }
+
+section#conference h2 {
+  background-image: url(images/nuts_red.gif);
+  color: #fff;
+  }
+
+section#festival .row li {
+  width: 30.6%;
+  }
+
+section#festival .img_wrap {
+  background: #191818;
+  }
+
+section#festival .desc_wrap {
+  background-image: url(images/tri_black.png);
+  }
+
+section#festival h3 {
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0 0 2px;
+  }
+
+section#misc {
+  border: 0;
+  background-image: none;
+  padding-bottom: 75px;
+  }
+  
+.misc > li {
+  width: 48%;
+  background: none;
+  padding: 0;
+  }
+
+section#wrap_up {
+  text-align: center;
+  background: #191818;
+  border: 0;
+  }
+
+section#wrap_up h2 {
+  background: none;
+  font-family: "kulturista-web-1","kulturista-web-2", Georgia, Times, serif;
+  font-size: 20px;
+  color: #fff;
+  line-height: 29px;
+  margin: 0 auto 31px;
+  max-width: 700px;
+  text-align: center;
+  }
+
+#credits {
+  text-align: center;
+  border-top: 1px dotted #242424;
+  background: #191818;
+  color: #505050;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 21px;
+  padding: 21px 0;
+  }
+
+#credits a {
+  color: #505050;
+  white-space: nowrap;
+  }
+
+#credits a:hover {
+  color: #eee;
+  }
+
+.tba {
+  text-align: center;
+  color: #999;
+  display: block;
+  font-size: 11px;
+  line-height: 21px;
+  margin: 0 0 21px;
+  }
+
+.btn {
+  background: #e41f3a;
+  color: #fff;
+  text-align: center;
+  width: 139px;
+  padding-left: 1px;
+  height: 39px;
+  line-height: 39px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 11px;
+  text-decoration: none;
+  }
+
+.btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #444;
+  }
+
+
+/* Detail (internal)
+------------------------------------------------------------*/
+.detail header {
+  min-height: 0;
+  background-image: none;
+  background: #e41f3b url(../images/temp-pattern.png) 50% 100% repeat-x;
+  padding: 40px 0 77px;
+  }
+
+.detail header #logo {
+  margin: 0;
+  background: url(../images/logo_red.gif) 0 50% no-repeat;
+  width: 24%;
+  height: 113px;
+  float: left;
+  }
+
+.detail header nav {
+  float: right;
+  width: 74%;
+  }
+
+.detail header ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  }
+
+.detail header ul.top {
+  border-bottom: 1px dotted #ec6376;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  }
+
+.detail header li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 18px;
+  width: 33.3%;
+  float: left;
+  text-align: left;
+  }
+
+.detail header a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  display: block;
+  padding: 5px 10px;
+  font-weight: 600;
+  }
+  
+.detail header a span {
+  color: #ff9fac;
+  font-size: 9px;
+  display: block;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-left: -1px;
+  }
+
+.detail header a:hover {
+  text-decoration: none;
+  background: #c61f36;
+  }
+
+.detail header a:hover span {
+  color: #fff;
+  }
+  
+.detail section {
+  margin: 0;
+  padding: 75px 0;
+  background: none;
+	border-bottom: 1px solid #ddd;
+  }
+
+.detail section p.intro {
+  text-align: left;
+  width: 48%;
+  margin: 0 auto 24px;
+  }
+
+.detail section p.intro:last-child {
+  margin-bottom: 0;
+  }
+  
+.detail section .wrap {
+	position: relative;
+  }
+  
+.detail section.first .wrap {
+	border-top: 1px dotted #e5e5e5;
+}
+
+.detail section li.first {
+  padding-top: 47px;
+	margin-top: -51px;
+/* 	border-top: 4px solid #e41f3b; */
+  }
+
+.detail h2 {
+  width: 48%;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  text-align: left;
+  padding: 0;
+  background: none;
+  }
+
+.detail h3 {
+  text-align: left;
+  font-size: 28px;
+  line-height: 30px;
+  color: #e41f3b;
+  padding-top: 2px;
+  }
+
+.detail h4 {
+  font-family: "kulturista-web-1","kulturista-web-2", Georgia, Times, serif;
+  text-align: left;
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  }
+
+.detail .row li h4 {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  }
+
+.detail .row li.google_map {
+  width: 74%;
+  margin: 0 0 0 2%;
+  }
+
+.map_container iframe {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+.map_container {
+  position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 21px;
+  }
+
+
+/* Location
+------------------------------------------------------------*/
+.flights li {
+	list-style: none;
+	margin: 11px 0 0;
+	padding: 0 0 0 22px;
+	background-image: url(images/icon_travel.png);
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	float: none;
+	width: 100%;
+	color: #808080;
+}
+
+.flights li.time {
+	background-image: url(images/icon_time.png);
+}
+
+.hotels > div {
+	float: left;
+	width: 335px;
+	padding: 0;
+	margin: 0 20px 0 0;
+	overflow: hidden;
+	}
+	
+.hotels div.last {
+	margin-right: 0;
+}
+
+.hotels img {
+	margin: 0 0 10px;
+	width: 335px;
+}
+
+.hotels h4 {
+	float: left!important;
+	margin: 0 0 6px;
+}
+
+.hotels span, .dining span, .drinking span, .coffee span {
+	float: right!important;
+	line-height: 24px;
+	padding-top: 2px;
+}
+
+.hotels div.first, .flights div.first, .dining div.first, .drinking div.first, .coffee div.first, .map div.first {
+	width: 220px;
+	padding-top: 47px;
+	margin-top: -51px;
+/* 	border-top: 3px solid #1fb4dd; */
+}
+
+.hotels div.first p, .flights div.first p, .dining div.first p, .drinking div.first p, .coffee div.first p, .map div.first p {
+	padding-right: 14%;
+	font-size: 11px;
+	line-height: 17.5px;
+}
+
+.hotels h4, .flights h4, .dining h4, .drinking h4, .coffee h4 {
+	font-size: 18px;
+}
+
+.hotels h2, .flights h2, .dining h2, .drinking h2, .coffee h2, .map h2 {
+	font-size: 28px;
+	line-height: 30px;
+	color: #111;
+}
+
+.hotels p, .flights p, .dining p, .drinking p, .coffee p, .flights ul {
+	color: #666;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+.flights ul {
+	margin-top: -4px;
+}
+
+.flights ul li:last-child {
+	margin-bottom: 0;
+}
+
+.dining div {
+	float: left;
+	width: 220px;
+	margin: 0 20px 0 0;
+}
+
+.hotels p.hotel_details {
+	float:left;clear:both; width:62%;;
+}
+
+.hotel_prices {
+	float:right;clear:none;width:36%;margin:0;padding:3px 0 0; padding:0!important;text-align: right;
+}
+
+section.map div.google_map {
+	float: right;
+	width: 700px;
+	height: 350px;
+	overflow: hidden;
+	margin: 0;
+}
+
+
+/* Responsive Magic Sauce
+------------------------------------------------------------*/
+@media screen and (max-width: 800px) {
+  .wrap {
+    padding: 0 4%;
+    }
+  
+  header #logo {
+    margin-bottom: 21px;
+    }
+    
+  header .date_loc,
+  .detail header .date_loc {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    max-width: 100%;
+    margin: 0 0 42px;
+    text-align: center;
+    }
+  
+  header .date_loc em {
+    display: inline;
+    }
+  
+  header .date,
+  header .loc {
+    float: none;
+    width: auto;
+    display: inline;
+    }
+
+  section {
+    padding: 65px 0 44px;
+    }
+  
+  section .intro {
+    line-height: 23px;
+    }
+  
+  .speaker_list.top {
+    margin-bottom: 0;
+    }
+    
+  .row > li,
+  .speaker_list li {
+    padding: 0 0 21px!important;
+    width: 100%!important;
+    margin: 0 0 21px!important;
+    }
+  
+  .row > li.last,
+  .speaker_list li.last {
+    border: 0;
+    margin-bottom: 0!important;
+    }
+    
+    
+  .detail section ul {
+    padding: 0 4%;
+  }
+  
+  section#travel {
+    padding-bottom: 22px;
+  }
+
+  section#travel h3 {
+      margin-bottom: 10.5px;
+    }
+    
+}

@@ -1,0 +1,404 @@
+header nav { overflow: hidden; }
+
+p, ol, ul, dl, dt, dd, blockquote {
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0 0 21px;
+  }
+
+li, dt, dd {
+  margin-left: 21px;
+  }
+
+hr {
+  border: 0;
+  border-top: 1px dashed #d0d0d0;
+  margin: 18px 0;
+  padding: 0;
+  height: 0;
+  clear: both;
+  }
+
+a {
+  color: #e41f3a;
+  cursor: pointer;
+  text-decoration: none;
+  }
+
+a:hover {
+  color: #333332;
+  text-decoration: none;
+  }
+
+h3 {
+  font-family: "kulturista-web", Georgia, Times, serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 21px;
+  text-align: center;
+  }
+  
+h4 {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 1px!important;
+  font-size: 11px;
+  line-height: 21px;
+  margin-bottom: 2px;
+  text-align: center;
+  }
+
+.home section {
+  padding: 75px 0 95px;
+  background:#fff url(../images/section_divider.png) 50% 100% repeat-x;
+  border: 0;
+  }
+
+.speaker_list {
+  font-family: "kulturista-web", Georgia, Times, serif;
+  }
+ 
+.speaker_list.bot {
+  max-width: 75%;
+  margin: 0 12.5%;
+  }
+
+.speaker_list.top {
+  margin: 0 1.5% 30px;
+  }
+
+.speaker_list li {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  }
+
+.speaker_list.bot li {
+  width: 30.6%;
+  }
+
+.speaker_list h3 {
+  color: #fff;
+  margin: 0;
+  }
+  
+.row,
+.speaker_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+.row > li,
+.speaker_list li {
+  float: left;
+  margin: 0 2%;
+  padding: 0;
+  width: 22%;
+  overflow: hidden;
+  }
+
+.row > li.first,
+.speaker_list li.first {
+  margin-left: 0;
+  }
+
+.row > li.last,
+.speaker_list li.last {
+  margin-right: 0;
+  }
+
+.row li.colspan-2 {
+  margin-right: 0;
+  width: 48%;
+  }
+
+.row .img_wrap {
+  display: block;
+  background: #e41f3a;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  }
+
+.index .row .desc_wrap {
+  display: block;
+  padding: 27px 0;
+  background: #fff url(images/tri_red.png) 50% 0 no-repeat;
+  }
+
+.row li p {
+  color: #808080;
+  margin: 0;
+  } 
+
+.row li li {
+  color: #808080;
+  }
+
+.row li a img {
+	-moz-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+	}
+
+.row li a:hover img {
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+	}
+
+.home section#conference {
+	background: #e41f3a url(../images/conf_bg.png) 50% 100% repeat-x;
+	border: 0;
+	padding-bottom: 240px;
+	margin-bottom: 10px;
+	color: #ff9fac;
+	}
+
+.home section#conference p.intro {
+	color: #ff9fac;
+	}
+
+.home section#conference h2 {
+	color: #fff;
+	background-image: url(../images/nuts_red.gif);
+	padding-top: 43px;
+	}
+
+.home h2 a,
+.home h2 a:hover {
+	color: #2a2a2a;
+	}
+ 
+section#conference a {
+	display: block;
+	}
+
+section#conference a:hover {
+	text-decoration: none;
+	}
+
+section#conference a h3 {
+	color: #ff9fac;
+	-moz-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+	}
+
+section#conference a:hover h3 {
+	color: #fff;
+	}
+
+section#conference a img {
+	margin-top: 0;
+	-moz-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+	}
+
+section#conference a:hover img {
+	margin-top: -5px;
+	}
+
+section#conference p.dateloc {
+	text-align: center;
+	margin: 0;
+	padding: 0 0 0 1px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-top: 8px;
+	}
+
+section#festival .row li {
+  width: 30.6%;
+  }
+ 
+section#sponsors .row li {
+	width: 13.3%;
+	}
+
+section#sponsors .row li {
+	padding-top: 10px;
+	text-align: center;
+	}
+
+section#festival .img_wrap {
+  background: #191818;
+  }
+
+section#festival .desc_wrap {
+  background-image: url(images/tri_black.png);
+  }
+
+section#festival h3 {
+  font-size: 22px;
+  line-height: 24px;
+  }
+
+section#sponsors {
+  border: 0;
+  background-image: none!important;
+  padding: 50px 0 35px;
+  }
+
+.misc > li {
+	width: 48%;
+	background: none;
+	padding: 0;
+	}
+
+section#wrap_up {
+  text-align: center;
+  background: #191818;
+  border: 0;
+  }
+
+section#wrap_up h2 {
+  background: none;
+  font-family: "kulturista-web", Georgia, Times, serif;
+  font-size: 20px;
+  color: #fff;
+  line-height: 29px;
+  margin: 0 auto 31px;
+  max-width: 700px;
+  text-align: center;
+  }
+
+.tba {
+  text-align: center;
+  color: #999;
+  display: block;
+  font-size: 11px;
+  line-height: 21px;
+  margin: 0 0 21px;
+  }
+
+
+/* Responsive Magic Sauce
+------------------------------------------------------------*/
+@media screen and (max-width: 720px) {
+	.home section#conference {
+		padding-bottom: 113px;
+		background-size: 682px 78px;
+	}
+
+  .wrap {
+    padding: 0 4%;
+    }
+
+  .home section,
+  .home section#sponsors {
+    padding: 36px 0 20px;
+    }
+  
+  section .intro {
+    line-height: 23px;
+    }
+  
+  .speaker_list.top {
+    margin-bottom: 0;
+    }
+    
+  .speaker_list.bot {
+	  margin: 0;
+	  max-width: 100%;
+  	}
+  
+  .speaker_list.bot li.last {
+	  width: 100%!important;
+	  margin: 0 auto!important;
+  	}
+  
+  section#conference a:hover img {
+		margin-top: 0;
+		}
+    
+  .row > li,
+  .speaker_list li {
+    padding: 0 0 13px!important;
+    width: 46%!important;
+    margin: 0 2% 13px!important;
+    }
+  
+  .row > li.last,
+  .speaker_list li.last {
+    border: 0;
+    margin-bottom: 0!important;
+    }
+    
+   #festival .row li {
+    padding: 0 0 13px!important;
+    width: 100%!important;
+    margin: 0 0 13px!important;
+   }
+    
+  .detail section ul {
+    padding: 0 4%;
+    }
+  
+  .row li h4 {
+	  margin-bottom: 0;
+	  }
+ 
+  .home .row li h3 {
+	  margin-bottom: 15px;
+	  padding: 2px 0 0;
+  	}
+  
+  section#sponsors .row > li {
+	  width: 29.4%!important;
+	  height: 44px;
+	  text-align: center!important;
+	  padding-top:10px!important;
+  	}
+  
+  section#sponsors .row > li img {
+		max-width: 90%;  
+  }
+}
+
+@media screen and (max-width: 520px) {
+	.row > li,
+  .speaker_list li {
+    padding: 0 0 13px!important;
+    width: 100%!important;
+    margin: 0 0 13px!important;
+    }
+  
+  section#sponsors .row > li {
+	  width: 50%!important;
+	  height: 35px;
+  	}
+  
+  .row > li.last,
+  .speaker_list li.last {
+    border: 0;
+    margin-bottom: 0!important;
+    }
+  
+  section#sponsors .row > li img {
+	  max-width: 60%!important;
+  	}
+  
+  section#sponsors .row > li {
+	  padding-top: 0!important;
+  	}
+  
+  section#sponsors h4 {
+	  margin-bottom: 15px;
+  	}
+	}
