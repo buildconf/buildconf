@@ -1,0 +1,276 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; font-weight: normal; vertical-align: baseline; background: transparent}
+body {line-height: 1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+:focus {outline: 0}
+ins {text-decoration: none}
+del {text-decoration: line-through}
+table {border-collapse: collapse; border-spacing: 0}
+body {background: #222222; color: #cccccc; font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","georgia",serif; font-size: 14px; line-height: 22px; text-rendering: optimizelegibility}
+strong {font-weight: bold}
+section {display: block}
+.grid-1, .grid-2, .grid-3, .grid-4 {float: left}
+.grid-1 {width: 220px; margin-right: 20px}
+.grid-2 {width: 460px; margin-right: 20px}
+.grid-3 {width: 720px; margin-right: 20px}
+.grid-4 {width: 980px; margin-right: 20px}
+#nav a, #footer a, #twitter a, #blog a, #schedule a, #fringe a, #orderconfirmation a {color: #fff; text-decoration: none; border-bottom: 1px solid #222; -webkit-transition-duration: .33s; -webkit-transition-property: color border}
+#nav a:hover, #footer a:hover, #twitter a:hover, #blog a:hover, #schedule a:hover, #orderconfirmation a:hover {color: #d0e700; text-decoration: none; border-bottom: 1px solid #d0e700}
+#schedule a, #orderconfirmation a {border-bottom: 1px solid #fff}
+#footer a {font-weight: bold}
+input {font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","georgia",serif; padding: 5px; border: none; font-size: 12px}
+sup,sub { height:0; line-height:1; vertical-align:baseline; _vertical-align:bottom; position:relative; color:#D6DF35; }
+.error {color:#D6DF35;}
+sup { bottom:1ex; }
+sub { top:.5ex; }
+h2 {font-size: 30px; line-height: 30px; margin-bottom: 40px; font-weight: bold; color: #fff}
+h3 {font-size: 18px; line-height: 22px; font-weight: bold; padding: 0px 0px 10px 0px; margin: 0px 0px 20px 0px; border-bottom: 1px solid #464646; color: #d0e700; width: 100%}
+.contain {width: 980px; margin: 0px auto; overflow: hidden}
+section {margin: 40px 0px 0px 0px;}
+ul#nav {margin: 40px 0px 20px 0px; padding: 5px 0px; text-align: right}
+ul#nav li {display: inline; margin-left: 40px}
+.button {padding: 5px 10px !important; font-weight: bold; text-decoration: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: none !important; font-size: 14px; background: #d9e000; color: #111}
+.button-primary {background: #d9e000; color: #111}
+.button-secondary {background: #444; color: #ccc}
+.continue-order {float: right; margin: 31px 0px 20px 0px;}
+.button a {color: #111 !important; text-decoration: none; border: none !important; font-weight: bold}
+.event-list li .register-now, .fringe-list li .register-now, .register-soon {display: inline-block; margin: 20px 0px 0px 0px}
+.creditcards {float: right; margin: 32px 10px 60px 0px}
+#logo {width: 220px; float: left}
+#event-info {text-align: center; margin: 20px 0px 0px -10px; color: #777777}
+#footer {text-align: right}
+ul#footer-list {padding: 100px 0px 60px 0px}
+ul#footer-list li {display: inline; margin-left: 40px}
+#footer form {display: inline}
+#footer #emailaddress {border: none; border-bottom: 1px solid #fff; width: 120px; padding: 4px 5px 5px 5px; color: #000; margin: 0px 2px 0px 5px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
+#footer #subscribe {color: #000; background: #d9e000; border: none; font-weight: bold; padding: 5px 10px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px}
+#footer #subscribe {cursor: pointer}
+.page-contain {margin: 80px 0px 0px 20px}
+#about p {margin-bottom: 20px}
+#about .sub {font-size: 26px; line-height: 32px; font-weight: bold; color: #fff}
+#about .desc {color: #ccc; font-size: 16px; line-height: 24px}
+#mailinglist {background: #333; padding: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; overflow: hidden}
+#mailinglist #emailaddress {padding-right: 10px}
+#mailinglist p {padding: 5px 0px 0px 0px; margin: 0px !important; float: left}
+#mailinglist form {float: right}
+#goldenticket {font-size: 12px; width: 220px; margin: 85px 0px 0px 20px; padding: 10px 10px 12px 10px; background: #333; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
+#goldenticket img {float: left; padding: 11px 0px; margin-right: 10px}
+#goldenticket p {color: #ffdd18}
+#goldenticket p a {display: block; color: #ffdd18; text-decoration: none}
+#goldenticket p a:hover {color: #ffe467}
+#speakers h3 {margin: 0px 0px 20px 240px;}
+ul#speaker-list {margin: 0px 0px 0px 20px}
+ul#speaker-list li {width: 220px; margin: 0px 20px 40px 0px; float: left; position: relative; color: #444}
+ul#speaker-list li:nth-child(1) {padding-left: 240px}
+ul#speaker-list li:hover {color: #ccc}
+.speaker-img {width: 216px; border: 2px solid #464646}
+.talk-speaker h5 {font-weight: bold; margin-bottom: 10px}
+.speaker-name {font-size: 20px; line-height: 24px}
+.speaker-name a {color: #fff; font-weight: bold; text-decoration: none}
+.speaker-tagline {font-weight: bold; color: #ccc}
+.speaker-tagline a {color: #ccc; text-decoration: none; font-weight: bold}
+.talk-description .talk-title {font-size: 20px; line-height: 24px; color: #fff; font-weight: bold; border-bottom: 1px solid #464646; padding: 0px 0px 5px 0px; margin: 0px 0px 10px 0px}
+.talk-description p {margin-bottom: 20px}
+.moreinfo {position: absolute; font-size: 40px; top: 125px; right: 0px}
+.moreinfo a {text-decoration: none}
+.moreinfo a:hover {}
+ul#fringe-list {margin: 0px 0px 0px 20px}
+ul#fringe-list li {width: 460px; margin: 0px 20px 40px 0px; float: left}
+ul#fringe-list li .fringe-img {width: 81px; float: left; margin-right: 10px; border: 2px solid #464646}
+ul#fringe-list li .fringe-title {font-size: 18px; line-height: 24px}
+ul#fringe-list li .fringe-title a {color: #fff; font-weight: bold; text-decoration: none}
+.fringe-title a:hover:after {content: " » "}
+h3 a {color: #d0e700 !important; font-weight: bold; text-decoration: none}
+h3 a:hover {color: #d0e700; border: none !important}
+h3 a:hover:after {content: " »"}
+#twitter {margin-left: 260px}
+ul#blog-list li:before {content: "» "}
+#sponsors {padding-top: 20px}
+ul#sponsor-list {padding-left: 20px; overflow: hidden}
+ul#conference-list li {margin-bottom: 20px; overflow: hidden}
+ul#workshop-list li {margin-bottom: 40px; overflow: hidden}
+.event-list {overflow: hidden}
+.event-list li {margin: 0px 0px 60px 0px; overflow: hidden}
+#schedule .event-list li {margin: 0px 0px 40px 0px;}
+.event-list .event-title {font-size: 20px; line-height: 24px; color: #fff; font-weight: bold; margin-bottom: 0px}
+.event-date, .event-venue, .event-price {display: inline; font-weight: bold; color: #ddd}
+.event-desc {margin-top: 5px}
+.event-date:after, .event-venue:after {content:" - ";}
+.conf-featured {padding: 20px; background: #333; width: 440px; margin-bottom: 40px;}
+.workshop-featured {padding: 20px; background: #333; width: 680px; margin-bottom: 20px;}
+#schedule-conf {width: 440px; margin: 15px 0px 0px 0px}
+#schedule-conf tr td {padding: 10px 10px 10px 0px; border-bottom: 1px solid #444}
+#schedule-conf h4 {font-weight: bold; color: #fff}
+#location iframe {margin: 0px 0px 20px 0px}
+#location ul.venue-list .grid-1 {margin: 0px 20px 0px 0px}
+ul.venue-list .grid-1 ul {margin-top: -10px}
+ul.venue-list .grid-1 ul li {padding: 10px 0px; border-bottom: 1px solid #333}
+#location-secondary h3 {color: #ccc}
+.venue-list h5 {font-weight: bold; color: #fff}
+.lookaly, .gowalla {float: right; margin-left: 4px}
+#speaker-profile h2 {margin-bottom: 10px}
+#speaker-profile #speaker-talk {margin-bottom: 60px}
+#speaker-profile .speaker-bio {margin-bottom: 40px}
+#speaker-profile .speaker-img {float: left; margin-right: 20px}
+table#register {width: 460px}
+table#register input {font-size: 14px; padding: 3px 5px 4px 5px; border: none}
+table#register tr {border-bottom: 1px solid #333}
+table#register tr:last-child {border: none}
+table#register td {padding: 10px 0px 7px 0px}
+table#register thead tr th {font-weight: bold; color: #555; padding-bottom: 5px; border-bottom: 1px solid #555; text-align: left}
+table#register .qty input {width: 25px; display: inline; margin: 0 2px; background: #fff}
+table#register thead tr th:nth-child(2), table#register thead tr th:nth-child(3), table#register thead tr th:nth-child(4), table#register tbody tr td:nth-child(2), table#register tbody tr td:nth-child(3), table#register tbody tr td:nth-child(4) {width: 85px; text-align: left}
+.incrementer, .decrementer {-webkit-border-radius: 5px; -mox-border-radius: 5px; border-radius: 5px; color: #d6df35; display: inline; text-align: center; cursor: pointer}
+.incrementer {padding: 2px 5px}
+.decrementer {padding: 2px 7px}
+.unavailable {text-decoration: line-through}
+table tbody .subtotal td {background: #1c1c1c; font-weight: bold; border-top: 1px solid #999; border-bottom: 1px solid #999}
+#order_discount_code {width: 80px}
+#user-control {margin-top: 25px; padding: 15px; background: #1c1c1c; overflow: hidden; width: 430px}
+#user-control h3 {color: #444; margin-bottom: 10px !important}
+#user-control p {margin: 0px}
+#user-email {width: 420px; overflow: hidden; margin-bottom: 10px; padding: 10px 0px 5px;}
+#user-email input {width: 275px; margin-left: 10px; margin-right: 20px;}
+#user-process {background: #222222; padding: 20px 15px}
+#user-type, #user-input {width: 200px; float: left; display: block}
+#user-input p {overflow: hidden}
+#user-input label {width: 65px; display: block; float: left; margin-right: 10px}
+#user-input input {width: 113px; float: left; margin-bottom: 10px}
+.discount-applied {padding-left: 15px}
+#register-tickets, #register-address, #register-options {overflow: hidden}
+#register-address {margin: 30px 0px 40px 0px}
+#register-address label {width: 150px; float: left; text-align: right; padding-right: 20px; padding-top: 5px}
+#register-address input, #register-address select {width: 228px; margin-right: 50px; float: left; margin-top: 2px}
+#register-address select {margin: 10px 50px 10px 0px; width: 240px}
+#register-options {text-align: right}
+#register-notification {margin-left: 20px; padding-top: 542px}
+.errorExplanation, #flash-notice, #flash-alert {background: #000; color: #d0e700; padding: 5px 10px; border-top: 1px solid #f8ffb9; border-bottom: 1px solid #f8ffb9; margin-bottom: 20px}
+#grid {width: 981px; position: absolute; top: 0; left: 50%; margin-left: -490px}
+#grid.grid-1 {background: url('../images/bg-grid-980.gif') repeat-y 0 0}
+#grid div.horiz {height: 19px; border-bottom: 1px dotted #aaa; margin: 0; padding: 0}
+#sign-in { background:#333333; border-top: 1px solid #444; padding:20px 20px 5px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; width:440px; }
+#sign-in p { margin: 0px 0px 10px; padding: 0px 10px; }
+#sign-in label { display:block; }
+#sign-in label { float:left; }
+#sign-in form fieldset { margin: 0px 0px 15px; padding: 0px 10px; }
+#sign-in form.signin .fields input { font-size:16px; width:404px; }
+#remember-me { margin: 0px 0px 0px 220px !important; }
+input#user_remember_me { float:left; margin:5px 8px 0 0; }
+.forgot-password-button { color: white; cursor: pointer; float: left;font-size: 12px; margin-left: 10px; opacity: 0.5; text-decoration: underline; -webkit-transition-duration: 0.13s; -webkit-transition-property: opacity; }
+.forgot-password-button:hover {color:#d0e700; opacity: 1;}
+#forgot-form { display:block; }
+#forgot-password-form { height:180px; width: 430px; }
+#forgot-password-form input#user_email { font-size:16px; width:404px; }
+#user_forgot_submit { float: right; margin: 20px 0px; }
+
+/* Registration Form */
+#register-form { background:#333333; border-top: 1px solid #444; width:420px; padding:20px 20px 0; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+table#register, table#order-history { width:420px; }
+table#register input, table#order-history input { font-size:14px; padding:4px 5px; border:none; }
+table#register tr, table#order-history tr { border-bottom:1px solid #3d3d3d; }
+table#register tr:last-child, table#order-history tr:last-child { border:none; }
+table#register td. table#order-history td { padding:10px 0; }
+table#register thead tr th, table#order-history thead tr th { font-size:16px; font-weight:bold; color:#fff; padding-bottom:5px; border-bottom:1px solid #555; text-align:left; }
+table#order-history thead tr th:nth-child(1n+1), table#order-history tbody tr td:nth-child(1n+1) {width: 100px; text-align: left; padding: 5px 0px;}
+table#order-history .price input { width:25px; display:inline; margin:0 2px; background:#fff; }
+table#register .qty input { width:25px; display:inline; margin:0 2px; background:#fff; text-align:center; }
+table#register thead tr th:nth-child(2) { width:85px; text-align:left; }
+table#register .ticket-type input,#register-form input, .ticket-type input,input#order_discount_code,input#order_user_attributes_password,.pass-holder input,.order-details input, #user_email, #user_password, #user_password_confirmation { color:#fff; background:url(../images/input-bg.png) no-repeat #2c2c2c; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; text-shadow:0 1px 0 #000000; font-family:ff-tisa-web-pro-1,ff-tisa-web-pro-2,georgia,serif; font-size:14px; padding:5px 8px!important; border:0; -webkit-box-shadow:0 1px 1px #5d5d5d; -moz-box-shadow:0 1px 1px #5d5d5d; box-shadow:0 1px 1px #5d5d5d; }
+input:#user_email, input:#user_password, input:#user_password_confirmation { width: 150px; }
+
+table#register input#order_submit { background:#d9e000 url(../images/btn-glass.png) repeat-x 0 0; color: #000 !important; }
+table#register input:focus,#user-input input:focus,.pass-holder input:focus,.order-details input:focus, input:focus#user_email, input:focus#user_password, input:focus#user_password_confirmation { outline:none; background-position:-500px 0; background-color:#3b3d17; }
+.unavailable { color:#777; }
+table tbody .subtotal td { background:#222222; }
+#order-passes { background:#333333; border-top:1px solid #444; width:680px; padding:20px 20px 0; -webkit-border-radius:4px; }
+#order-history-form { background:none; border-top:none; margin:30px 0 0; padding:20px 0px 0; width:420px; }
+.button { padding:0!important; }
+.button a { background:#d9e000 url(../images/btn-glass.png) repeat-x 0 0; padding:5px 10px!important; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; border:none!important; }
+.button-secondary a {background:#444 url(../images/btn-secondary-glass.png) repeat-x 0 0; color:#ccc; padding:5px 10px !important; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; border:none!important; text-decoration: none;}
+.button a:active,.button-secondary a:active { position:relative !important; top:1px !important; -webkit-transition-duration:0 !important; outline: none; }
+input.button,#footer #subscribe { background:#d9e000 url(../images/btn-glass.png) repeat-x 0 0; padding:5px 10px!important; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; border:none!important; cursor:pointer; text-shadow: none !important; color:#000;}
+.button-secondary {background:#444 url(../images/btn-secondary-glass.png) repeat-x 0 0 !important; color:#ccc !important;}
+.button-grey { background:#444 url(../images/btn-secondary-glass.png) repeat-x 0 0 !important; color:#ccc !important; }
+#footer #subscribe { background:#d9e000 url(../images/btn-glass.png) repeat-x 0 -20% !important; }
+input.button:active,#footer #subscribe:active { top:1px; position:relative; }
+#user-control,#user-process { border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+#user-control { background:#262626; width:390px; }
+#user-control h3 { color:#777; }
+#user-process { background:#262626; padding:20px 15px 10px; }
+#user-type,#user-input { width:193px; }
+#user-email input { margin-right: 0; width:265px; }
+#user-input input { width:165px; }
+#user-input p { margin-left: 10px; }
+input[type=radio] { -webkit-appearance:checkbox; }
+input[type=password] { letter-spacing:.25em; }
+.creditcards { float:left; margin:30px 10px 0 0!important; }
+/* Passes and Orderse Form */
+#order-passes>ul>li { padding:0 0 20px; }
+#order-passes>ul>li:nth-child(2n+2) { border-bottom:1px solid #3D3D3D; border-top:1px solid #3D3D3D; margin: 0px 0px 5px; padding: 20px 0px; }
+#order-passes>ul>li:first-child { padding:25px 0 20px 0; }
+#order-passes>ul>li:last-child { margin: 0px -20px; padding: 20px; }
+.user-admin>p:nth-child(1) { float:left; margin:9px 18px 0 0; cursor:help; }
+.user-additional { clear: both; margin:5px 0 0px 65px; }
+.user-additional div { opacity:0.5; -webkit-transition-property:opacity; -webkit-transition-duration:.13s; }
+.pass-holder { width:355px; float:left; display:block; }
+.order-invoice { display: block; float: left; width: 615px; }
+.pass-holder div.field-group,.order-invoice p { float:left; }
+.pass-holder input,.order-invoice input { width:151px; float:left; margin-bottom:10px; }
+.pass-holder label,.order-details label { display:block; }
+.pass-holder>div.field-group:nth-child(2),.order-details>div.field-group:nth-child(1n+2) { margin-left:18px; }
+.focusField { opacity:1!important; }
+.select-workshop { float:right; margin-top:15px; }
+.select-workshop-label { padding-left:20px; }
+.workshop-credit { padding:20px 0 0; }
+.assign-pass { float:right; margin: -25px 0px 17px; }
+#user_submit { float: right; margin: 5px 0px 10px; }
+#assign-pass-form { clear: both; width: 680px; }
+#assign-pass-form>ul>li { border-bottom:1px solid #3D3D3D; padding: 20px 0px; }
+#assign-pass-form>ul>li:first-child { padding:10px 0 20px; }
+#create-pass { background-color: #2D2D2D; border-top:1px dashed #3D3D3D; border-bottom: 1px dashed #3D3D3D; display: block; float: left; margin: 0px -20px; padding: 0px 20px; width: 680px; }
+#process_details { float:right; margin: 25px 0px; }
+#order-history ul li { margin:0 0 20px; }
+.order-invoice>p>nth-child(2) input { width:80px; }
+#your-orders.pass-holder { width:305px; }
+#order-history>ul>li:nth-child(1n+2) { border-top:1px solid #3D3D3D; padding-top:20px; }
+.user-order { margin:0; }
+.view-invoice { text-align: center; width: 110px; }
+.order-details input { margin-right: 0px; width: 112px; }
+#order_user_attributes_payment { text-transform: uppercase; }
+.order-details { float: left; }
+.order-details p { float:left; }
+.purchase-workshop { float: left; font-size: 13px; margin: -65px 0 0 20px; width: 240px; }
+.purchase-workshop a { -webkit-transition-duration: 0.33s; border-bottom: 1px solid white; color: white; text-decoration: none; }
+.purchase-workshop a:hover { border-bottom: 1px solid #d9e000; color: #d9e000; text-decoration: none;}
+.alert { background: url(../images/alert.png) no-repeat; color: #222; font-size:13px; font-weight: 600; position:absolute; height: 24px; margin: -58px 0px 0px 482px; padding: 1px 5px 2px; text-align: center; width: 230px;}
+.alert span {border:1px solid #d9e000; padding: 0px 5px;}
+
+/*
+Stylish Select 0.4.1 - $ plugin to replace a select drop down box with a stylable unordered list
+http://scottdarby.com/
+Copyright (c) 2009 Scott Darby
+Requires: jQuery 1.3 or newer
+Dual licensed under the MIT and GPL licenses.
+*/
+.stylish-select ul.newList { left:-9999px; }
+ul.newList * { margin:0; padding:0; }
+ul.newList a { color:#000; text-decoration:none; display:block; }
+ul.newList { margin:0; padding:0; list-style:none; width:235px; background:#404040!important; color:#fff!important; position:absolute; border-bottom:1px solid #3D3D3D; top:22px; left:1px!important; overflow:auto; z-index:9999; box-shadow:0 0 15px #222; -moz-box-shadow:0 0 15px #222; -webkit-box-shadow:0 0 15px #222; }
+fieldset#assign-pass-form ul.newList { top:-133px!important; }
+.newListSelected { width:235px; color:#000; height:30px; padding:4px 0 0 6px; float:right; margin:-41px 0 5px; background:url(../images/select-bg.png) no-repeat 0 -38px; }
+.newListSelected span { width:284px; display:block; }
+ul.newList li a { color:#fff; padding:5px 8px; display:block; border-bottom:1px solid #555!important; -webkit-transition-duration:.33s; -webkit-transition-property:color background; }
+ul.newList li a:focus { -moz-outline-style:none; background:url(../images/select-bg.png) no-repeat 0 0; }
+.selectedTxt { color:#CCC; height:21px; overflow:hidden; padding:0 34px 0 3px; width:198px; cursor:pointer; text-overflow:ellipsis; -o-text-overflow:ellipsis; -khtml-text-overflow:ellipsis; -moz-text-overflow:ellipsis; -webkit-text-overflow:ellipsis; -icab-text-overflow:ellipsis; }
+.hiLite { background:#434426!important; color:#fff!important; }
+.hiLite a { background:#444!important; color:#fff!important; }
+.newListHover { background:#2d2d2d!important; color:#fff!important; cursor:pointer; }
+.newListSelHover,.newListSelFocus { cursor:default; }
+.newListSelFocus { background:url(../images/select-bg.png) no-repeat 0 -1px; }
+.newListOptionTitle { font-weight:bold; }
+.newListOptionTitle ul { margin:3px 0 0; }
+.newListOptionTitle li { font-weight:normal; border-left:1px solid #ccc; }
+
+#order-passes h3{margin-bottom:0px;}
+/* Localized */
