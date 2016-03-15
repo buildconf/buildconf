@@ -1,0 +1,448 @@
+body {
+	background: #fff;
+	color: #222;
+	font-size: 12px;
+	font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+	margin: 20px 0px 40px 0px;
+}
+
+/* link style */
+
+.twitter a, #footer a, .biocontain a, table a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+}
+
+#buytickets a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.location .subtitle a {
+	font-weight: bold;
+	color: #999;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+/* structure */
+
+.contain {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.section {
+	margin-bottom: 20px;
+}
+
+.column {
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.col_2 {
+	width: 470px;
+	float: left;
+}
+
+.col_23 {
+	width: 640px;
+	float: left;
+}
+
+.col_13 {
+	width: 320px;
+	float: left;
+}
+
+.col_3 {
+	width: 320px;
+	float: left;
+}
+
+.col_6 {
+	width: 160px;
+	float: left;
+}
+
+.border {
+	border-bottom: 1px dashed #ccc;
+}
+
+.noborder {
+	border: none !important;
+}
+
+.nomargin {
+	margin: 0px !important;
+}
+
+.nopadding {
+	padding-right: 0px !important;
+}
+
+/* typography */
+
+.twitter h2, .news h2 {
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+/* navigation */
+
+#nav li {
+	font-size: 15px;
+	font-weight: bold;
+	width: 80px;
+	display: inline;
+	margin-right: 40px;
+}
+
+#nav li a {
+	text-decoration: none;
+	color: #005ba1;
+	font-weight: bold;
+}
+
+#nav li a:hover {
+	text-decoration: none;
+	color: #002d50;
+	font-weight: bold;
+}
+
+/* header */
+
+#header {
+	background: #006fc5;
+	padding: 10px 0px 12px 0px;
+}
+
+#header h1 {
+	font-size: 98px;
+	letter-spacing: -6px;
+	font-weight: bold;
+	margin: 0px 0px -5px -6px;
+	color: #fff;
+}
+
+#header h2 {
+	font-size: 22px;
+	color: #fff;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+#buytickets {
+	position: absolute;
+	left: 875px;
+	top: 10px;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	background: #bde940;
+	width: 135px;
+	text-align: center;
+}
+
+/* blurb */
+
+.headline {
+	font-size: 18px;
+	line-height: 1.4em;
+	margin-bottom: 10px;
+}
+	
+.sub {
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #777;
+}
+
+.mainimage {
+	position: absolute;
+	top: 155px;
+}
+
+/* mailing list */
+
+.mailcontain {
+	background: #ececec;
+	padding: 10px 0px 12px 0px;
+	color: #222;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+#mailinglist #email {
+	font-size: 13px;
+	background: transparent;
+	padding: 7px 0px;
+	width: 180px;
+	display: inline;
+	border: 0px;
+	color: #222;
+	border-bottom: 1px dashed #777;
+}
+
+#mailinglist #submit {
+	background: #444;
+	border: 0px;
+	font-size: 12px;
+	color: #fff;
+	margin: 0px 2px;
+	padding: 5px;
+}
+
+.ampersand {
+	font-family: "Baskerville",'Palatino Linotype','Palatino',Georgia,'Times New Roman',serif;
+	font-style: italic;
+	font-size: 16px;
+	color: #111;
+}
+
+/* speakers */
+
+.speaker {
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+.speaker img {
+	float: left;
+	width: 55px;
+	margin-right: 10px;
+}
+
+/* news */
+
+.news {
+	width: 640px;
+	float: left;
+	position: relative;
+}
+
+	.news .date {
+		width: 50px;
+		text-align: right;
+		font-size: 14px;
+		letter-spacing: 1px;
+		padding-right: 10px;
+		border-right: 1px solid #ccc;
+		float: left;
+	}
+	
+	.news .day {
+		font-size: 18px;
+		color: #777;
+		margin: 5px 0px 5px 0px;
+	}
+	
+	.news .entry {
+		float: left;
+		width: 220px;
+		padding-left: 15px;
+	}
+	
+	.news .entry h3, .news .entry h3 a {
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	
+	.news .entry p {
+		font-size: 12px;
+		line-height: 1.4em;
+	}
+	
+	.news .rss {
+		position: absolute;
+		left: 600px;
+		top: 4px;
+	}
+
+.twitter {
+	width: 320px;
+	float: left;
+}
+
+	.status {
+		font-size: 12px;
+		line-height: 1.4em;
+		background: #ececec;
+		padding: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		position: relative;
+	}
+
+	.followus {
+		margin: 10px 0px 0px 20px;
+		font-size: 12px;
+	}
+
+	.bird {
+		position: absolute;
+		bottom: -40px;
+		right: 10px;
+	}
+
+#footer {
+	border-top: 1px dashed #ccc;
+	padding: 20px 0px;
+	text-align: right;
+}
+
+/* schedule-specific */
+
+.schedule .date {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 20px;	
+}
+
+.schedule .eventtitle {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+table {
+	font-size: 12px;
+}
+
+table td {
+	padding: 20px 0px;
+	border-bottom: 1px dashed #ccc;
+}
+
+table .time {
+	width: 70px;
+}
+
+table .description {
+	line-height: 1.4em;
+}
+
+table .venue {
+	width: 90px;
+	padding-left: 10px;
+	line-height: 1.4em;
+}
+
+/* location-specific */
+
+.location .col_13 {
+	min-height: 195px;
+	line-height: 1.4em;
+}
+
+.location h2 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.location h3 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.3em;
+}
+
+.location .subtitle {
+	font-weight: bold;
+	color: #999;
+	font-size: 14px;
+}
+
+.location .rating {
+	font-style: normal;
+	font-weight: normal;
+	color: #999;
+	font-size: 20px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.location p {
+	margin-bottom: 10px;
+}
+
+.location .marker {
+	float: left;
+	margin-right: 10px;
+}
+
+.location .col_23 iframe {
+	width: 650px;
+	position: absolute;
+	top: 145px;
+}
+
+.location .col_3 {
+	width: 300px !important;
+	padding: 20px 30px 20px 0px;
+	line-height: 1.4em;
+}
+
+.location .example {
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
+	position: relative;
+}
+
+/* speakers-specific */
+
+.speakers .col_13 {
+	width: 300px !important;
+	margin-left: 20px !important;
+}
+
+.biocontain {
+	margin: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #ccc;
+	line-height: 1.4em;
+}
+
+.col_23 .biocontain img {
+	border: 1px solid #ccc;
+	padding: 5px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+
+.col_13 .biocontain img {
+	border: 1px solid #ccc;
+	padding: 5px;
+	float: right;
+	margin: 0px 0px 10px 10px;
+}
+
+.speakers .col_23 h2, .speakers .col_13 h2 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.speakers .pagetitle {
+	font-size: 26px !important;
+	font-weight: bold;
+	margin-bottom: 20px !important;
+}
+
+.speakers .col_23 h3, .speakers .col_13 h3 {
+	color:#999999;
+	font-size:14px;
+	letter-spacing:0.1em;
+	text-transform:uppercase;
+	margin-bottom: 5px;
+}
