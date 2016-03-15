@@ -1,0 +1,67 @@
+.wrap-header {
+  border-bottom: 0;
+  }
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 70px;
+  margin: 100px auto 55px;
+  background: url(../_gfx/logo.png) 0 0 no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  border: none!important;
+  }
+  
+  
+h1 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  }
+  
+p {
+  font-size: 18px;
+  line-height: 24px;
+  }
+
+.print-wrap {
+  width: 600px;
+  margin: 0 auto 70px;
+  }
+  
+.price_wrap {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 13px;
+  color: #888;
+  font-style: italic;
+  }
+  
+.price_wrap em {
+  color: #EF3E42;
+  font-size: 24px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: "proxima-nova-condensed-1","proxima-nova-condensed-2", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  letter-spacing: 1px;
+  font-style: normal;
+  }
+  
+form {
+  float: right;
+  width: 50%;
+  text-align: right;
+  margin: 0 0 35px;
+  }
+
+form input {
+  width: 70%;
+  margin-right: -2px;
+    font-family: "proxima-nova-condensed-1","proxima-nova-condensed-2", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif!important;
+  }

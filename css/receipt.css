@@ -1,0 +1,72 @@
+* { color: #000!important; border-color: #ccc!important; } 
+
+body, #wrapper {
+	background: #aaa;
+}
+
+#wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
+
+#wrapper .container {
+	margin: 36px auto 48px;
+	background: #fff;
+	-webkit-box-shadow: 0 0 42px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: 0 0 42px rgba(0, 0, 0, 0.33);
+	box-shadow: 0 0 42px rgba(0, 0, 0, 0.33);
+}
+
+h1 {
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: 'Helvetica Neue', Arial, sans-serif!important;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.receipt_header {
+	padding: 60px 119px 36px 0;
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 42px;
+}
+
+.receipt_header img {
+	margin: 0 0 36px 100px;
+	display: block;
+	height: 87px;
+	width: 123px;
+	float: left;
+}
+
+.receipt_header div {
+	float: right;
+	width: 480px;
+	padding-top: 18px;
+}
+
+.receipt_header h1, .receipt_header p {
+	width: 140px;
+	margin-left: 20px;
+	float: left;
+}
+
+.receipt_header p.last {
+	margin-left: 13px;
+}
+
+.terms {
+	float: left; width: 460px;
+}
+
+#subtotal_title, .registration_block_row .type { font-weight: normal; }
+
+.back, .button {  float:left; margin-right: 20px; }
+.back { margin: 30px 0 0 20px; line-height: 39px; }

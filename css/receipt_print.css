@@ -1,0 +1,13 @@
+body, #wrapper {
+	background: #fff;
+}
+
+.back, .button { display: none; }
+
+#wrapper .container {
+	margin: 0 auto;
+	background: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}

@@ -1,0 +1,201 @@
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		CONTENT
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */		
+		
+	.post {
+		width: 500px;
+		margin: 0 0 3.5em 0; padding: 0 0 3.5em 0; border-bottom: 1px dotted #dbe0e3; }
+		
+	.permalink {
+		float: right;
+		margin-top: -10px; }
+			
+	.permalink a, .permalink a:link, .permalink a:visited {
+		color: #3F3F3F;	}		
+				
+	.permalink a:hover {
+		color: #000;	}
+				
+	#content blockquote {
+        padding-left: 15px;
+		border-left: 1px dotted #d0d0d0; }
+        #content blockquote p {
+		line-height: 25px; }
+		
+	.postmeta {
+		margin-top: 10px;
+		font: italic 11px Helvetica, Arial, sans-serif; }
+		
+	.postmeta a, .postmeta a:link, .postmeta a:visited {
+		color: #ccc;}
+		
+	.postmeta a:hover {
+		color: #333;}
+		
+
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		QUOTE
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */		
+		
+	.quote p, .photo p, .video p, .audio p, #content .conversation, .text blockquote, #footer {
+		color: #333;	}
+
+			
+		
+		
+		
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		PHOTO
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+	
+	.photo img, .photo a img, .video object {
+	}
+
+		
+		
+		
+		
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		CONVERSATION
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+	#content .conversation {
+		line-height: 2em; }
+	
+	.member1 {
+		color: #5d838b;
+		background: #f9f9f9; }
+	
+	.label { 
+		font-weight: bold;
+		font-style: italic;
+		color: #999;
+		padding-right: 10px; }
+			
+	.member1 .label { color: #5d838b; }
+
+	
+	
+	
+	
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		TEXT
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+		
+	.text blockquote {
+		margin: 0 0 1.5em 1.5em;
+		padding: 0 0 0 1.5em;
+		border-left: 1px solid #333;	}
+	
+	ul {
+		list-style-type: none; }
+		
+	ol {
+		list-style-type: none;
+		margin: 0 0 1.5em 2.5em; }
+		
+	ol.notes li {
+		width: 500px;
+		padding: 3px 0;
+		margin: 0 0 3px -28px;
+		border-bottom: 1px solid #f5f5f5; }
+		
+	ol.notes li:hover {
+		border-bottom: 1px solid #e0e0e0; }
+		
+	ol.notes li img {
+		padding-right: 10px;
+		margin-bottom: -5px;
+		opacity: 0.85;
+		filter:alpha(opacity=85); }
+		
+	ol.notes li img:hover {
+		opacity: 1;
+		filter:alpha(opacity=100); }	
+		
+	strong { font-weight: bold; }
+	
+	em { font-style: italic; }
+	
+	
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		AUDIO
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+		
+	span.playcount {
+		font: italic 11px Georgia, "Times New Roman", Times, serif; }
+		
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		NAVIGATION
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+	#navigation {
+		margin-bottom: 30px; }
+	
+	#navigation span.page_number {
+		color: #d0d0d0; }
+		
+		
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		FOOTER
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+			
+	#searchform input {
+		border: none;
+		background: #eee;
+		padding: 3px;
+		color: #888; }
+			
+
+body {
+	padding: 0 0 50px;
+	background: #fff;
+}
+
+#blog {
+	width: 500px;
+	padding: 250px 50px 0;
+	margin: 0 auto;
+}
+
+#wrapper .container {
+	width: 600px;
+}
+
+#blog_header {
+	border-top: 6px solid #1fb4dd;
+	margin: 0 auto;
+	text-align: center;
+	padding: 12px 50px 0;
+	width: 500px;
+	position: fixed;
+	background: url(http://static.tumblr.com/pyl5n6u/SM7lir9ql/blog_header_bg.png);
+}
+
+#blog_logo {
+	display: block;
+	width: 109px;
+	height: 80px;
+	margin: 8px 0 30px;
+	float: left;
+}
+
+#blog h2 {
+	font-size: 24px;
+}
+
+.postmeta { color: #ccc; }
+
+.blog_link, #return_to_main_site {
+	color: #999;
+	margin: 0 0 0 30px;
+	font-size: 11px;
+	float: right;
+	padding: 30px 0 0;
+}
+
+.blog_link:hover, #return_to_main_site:hover {
+	color: #000;
+}

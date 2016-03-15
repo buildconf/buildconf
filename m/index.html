@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Manual</title>
+<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="all" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="false" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" href="_styles/main.css" type="text/css" />
+<script type="text/javascript" src="http://use.typekit.com/xrg1sdy.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+    <div class="wrap-header">      
+        <div id="header" class="container_16 group">
+            <div id="logo" class="grid_16">
+                <a href="./" class="logo" title="The Manual">The Manual</a>
+                <div id="buy-it-now"><a href="#shop">Buy it now</a></div>
+            </div>
+        
+            <div id="current" class="grid_16">
+                <div class="slideshow">
+                    <img src="_gfx/current/header-1.jpg" height="500" alt="Current Issue Screenshot 1" />
+                </div>
+
+                <ul class="current-nav">
+                    <li><a href="_gfx/current/header-1.jpg" title="Current Issue Screenshot 1" class="selected">01</a></li>
+                    <li><a href="_gfx/current/header-2.jpg" title="Current Issue Screenshot 2">02</a></li>
+                    <li><a href="_gfx/current/header-3.jpg" title="Current Issue Screenshot 3">03</a></li>
+                    <li><a href="_gfx/current/header-4.jpg" title="Current Issue Screenshot 4">04</a></li>
+                    <li><a href="_gfx/current/header-5.jpg" title="Current Issue Screenshot 5">05</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>            
+
+<!--
+    <div class="wrap-sticky">
+        <div class="wrap-nav sticky">
+            <div id="nav" class="container_16 group">
+                <ul class="grid_16">
+                   <li class="current"><a href="index.html#header">Current Issue</a></li> 
+                   <li class="shop"><a href="index.html#shop">Shop</a></li>
+                   <li class="ethos"><a href="index.html#ethos">Ethos</a></li> 
+
+                   <li class="blog"><a href="index.html#blog">Blog</a></li> 
+
+                   <li class="team"><a href="index.html#team">Team</a></li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+-->
+    
+    <div class="wrap-section">
+        <div id="shop" class="container_16 section group">
+            <h1>Shop</h1>
+        
+            <div class="grid_4">
+                <ul class="sidenav">
+                    <li><h3>Available for Sale &mdash;</h3></li>
+                    <li><a href="#">Issue #1</a></li>
+                    <li><a href="#">Issue #2</a></li>
+                    <li><a href="#">One year subscription</a></li>
+                 </ul>
+                 <form action="/checkout" method="POST">
+                     <ul class="shop-actions">
+                        <li class="shop-cart"><h3>Your Cart</h3></li>
+                        <li class="shop-cart-items">
+                            <ul>
+                            </ul>
+                        </li>
+                        <li class="shop-subtotal">Subtotal <span>$0.00</span></li>
+                        <li class="shop-shipping">
+                            <select name="destination">
+                                <option value="">Select a shipping destination</option>
+                                <option data-price="7.61" value="US">USA</option>
+                                <option data-price="4.45" value="UK">UK</option>
+                                <option data-price="5.08" value="EU">EU</option>
+                                <option data-price="7.92" value="ROW">Elsewhere</option>
+                            </select>
+                        </li>
+                        <li class="shop-shipping-total">Shipping <span>$0.00</span></li>
+                        <li class="shop-grand-total">Grand Total <span>$0.00</span></li>
+                        <li class="shop-checkout">
+                            <input type="submit" class="submit" value="Checkout Now &nbsp;&rarr;" />
+                        </li>
+                        <li class="shop-note">You will be redirected to Paypal to complete your order</li>
+                     </ul>
+                </form>
+            </div>
+            
+            <div class="loadable grid_12 group">
+            
+                <div class="inner_11">
+                    <div class="shop-inner">
+                        <h3>The Manual</h3>
+                        <h2><em>Issue 01</em></h2>
+                        <p>
+                            <img class="cheat-right" src="_gfx/sample/issue01.jpg" width="460" />
+                            The articles focus on bringing a greater depth and maturity to our craft and profession, with contributions in the first issue from wonderfully talented artists and writers such as Simon Collison, <a href="#">Frank Chimero</a>, Liz Danzico, Dan Rubin, Jon Tan, and the Web Standardistas.</p>
+                        <p>The journal features a beautiful foil-stamped design on the cover. It&#8217;s not a magazine—it&#8217;s a journal, a quarterly of heft, weight and gravitas that matches the content within. It measures 6 x 9 inches, is hardbound with 50# white text sheet and a 100# cover stock.</p>
+                    </div>
+                    <form id="purchase" action="" method="POST">
+                        <input type="hidden" name="description" class="description" value="Issue 01" />
+                        <input type="hidden" name="slug" class="slug" value="issue-01" />
+                        <input type="hidden" name="price" value="25.00" />
+                        <label for="add-to-cart" class="price">$25.00</label>
+                        <select name="description">
+            <option value="subscription-04">Subscription starting at Issue 04</option>
+            <option value="subscription-03">Subscription starting at Issue 03</option>
+            <option value="subscription-02">Subscription starting at Issue 02</option>
+            <option value="subscription-01">Subscription starting at Issue 01</option>
+        </select>
+
+                        <input type="submit" class="btn add-to-cart" value="Add to Cart" />
+                    </form>
+                </div>
+                            
+                <div class="grid_5">&nbsp;</div>
+                <ul class="shop-images grid_11">
+                    <li>
+                        <a class="zoom" href="#shop1"><img src="_gfx/sample/shop1.jpg" width="128" /></a>
+                        <span id="shop1"><img src="_gfx/sample/shop1.jpg" /></span>
+                    </li>
+                    <li>
+                        <a class="zoom" href="#shop2"><img src="_gfx/sample/shop2.jpg" width="128" /></a>
+                        <span id="shop2"><img src="_gfx/sample/shop2.jpg" /></span>
+                    </li>
+                    <li>
+                        <a class="zoom" href="#shop3"><img src="_gfx/sample/shop3.jpg" width="128" /></a>
+                        <span id="shop3"><img src="_gfx/sample/shop3.jpg" /></span>
+                    </li>
+                </ul>
+                
+            </div>
+                        
+        </div>
+        
+    </div>
+    
+    <div class="wrap-section">
+        <div id="ethos" class="container_16 section group">
+            <h1 class="grid_16">Ethos</h1>
+            
+            <div class="group">
+                <div class="grid_1">&nbsp;</div>
+                <h2 class="grid_14 intro"><em>The Manual will help smart designers, like you, look at your next project in a different way, questioning your choices.</em></h2>
+                <div class="grid_1">&nbsp;</div>
+            </div>
+            
+            <div class="group">
+                <div class="grid_1">&nbsp;</div>
+                 <div class="inner_7">
+                    <p>We hear the voices of a conversation moving through the community of the craftspeople of interactive design: popping up at conferences, in tweets and blog posts, and in adrenalized chats over beer when we gather. The Manual chronicles these voices in a beautiful print artifact. It archives the insights of our best thinkers and writers&#8212;both the well-known and the quietly working&#8212;as we define a more mature understanding of the discipline of web design and more effectively tell the story of our work.</p>
+                </div>
+                <div class="inner_7">
+                  <p>Web design is coming into its own as a discipline, with its roots firmly in graphic design, yet now creating its own principles, tools, and visual language. Everything we do requires a good hard look. Our community has rightly focused on the "how" of design on the web. But you won&#8217;t find markup and code, tutorials, and galleries on these pages. The Manual looks at the "why": the "why" of our designs, the "why" of the transformative power of our work, and the "why" of where we're heading.</p>
+                </div>
+                <div class="grid_1">&nbsp;</div>
+            </div>
+
+            <div class="group">
+                <div class="grid_1">&nbsp;</div>
+                <div class="inner_7">
+                    <p><img src="_gfx/ancient.jpg" class="cheat-left" /></p>
+                </div>
+                <div class="inner_7" style="padding-top:55px;">
+                    <h2>Walk away from your work.</h2>
+                    <p>Where do we find inspiration? Not in the distracting devices we peck at with fingers and thumbs. Often, it comes not from technology but  through reflection or experiences.</p>
+                    <p>Read The Manual at the park, by the river, in a pub, over coffee. It&#8217;s crafted to the standards that designers expect&#8212;its beauty is textured, tangible. Each article is paired with a delightful illustration. Each page is a revelation. After savoring what&#8217;s inside, you&#8217;ll return to your work invigorated, musing, challenged, or on fire. You&#8217;ll want more than ever to be part of this story.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+<!--
+    <div class="wrap-section">
+        <div id="blog" class="container_16 section group">
+            <h1>Blog</h1>
+            
+            <div class="row group">
+                
+                <div class="inner_4">
+                    <ul class="sidenav">
+                        <li><h3>Search &mdash;</h3></li>
+                        <li>
+                            <form action="" method="GET">
+                                <input type="text" name="q" class="query" value="" />
+                                <input type="submit" class="submit" value="Go" />
+                            </form>
+                        </li>
+                    </ul>
+                    
+                    <ul class="sidenav">
+                        <li><h3>Archive &mdash;</h3></li>
+                        <li><a href="#"><span>2011</span> July</a></li>
+                        <li><a href="#"><span>2011</span> June</a></li>
+                        <li><a href="#"><span>2011</span> May</a></li>
+                        <li><a href="#"><span>2011</span> April</a></li>
+                        <li><a href="#"><span>2011</span> March</a></li>
+                        <li class="see-more"><a href="#">See more</a></li>
+                     </ul>
+                     <ul class='sidenav sidenav-more'>
+                        <li><a href="#"><span>2011</span> February</a></li>
+                        <li><a href="#"><span>2011</span> January</a></li> 
+                     </ul>
+                </div>
+            
+                <div class="loadable group">            
+                    <div class="inner_6">
+                        <h3>May 27 2011</h3>
+                        <h2><a href="./blog_individual.html">Rewards: A3 Screenprint</a></h2>
+                        <p>More goodies back from the printers this week, starting with the A3 screenprints for our $250+ backers:</p>
+                        <p><img src="_gfx/sample/screenprint.jpg" alt="Screenprint" /></p>
+                        <p class="read-more"><a href="./blog_individual.html">Read more</a></p>
+                        <p><em>&mdash; Andy</em></p>
+                    </div>
+            
+                    <div class="inner_6">
+                        <h3>May 22 2011</h3>
+                        <h2><a href="./blog_individual.html">Collecting your shipping information</a></h2>
+                        <p>A few backers have been in touch to ask when they should send their address to us in order to receive The Manual. We&#8217;re not collecting any shipping details now. Instead, we&#8217;re waiting until we&#8217;re closer to the release date in order to make sure everything is as accurate and up-to-date as possible. We hope to be shipping Issue #1 around early/mid-July. We haven&#8217;t forgotten you and we&#8217;ll be sure to ask you for your address a few weeks in advance. </p>
+                        <p><em>&mdash; Andy</em></p>
+                    </div>
+            
+                </div>
+                
+            </div>
+            
+            <div class="grid_4">&nbsp;</div>
+            <ul class="explore grid_12">
+                <li class="next"><a href="blog/next.html">Next posts</a></li>
+                <li class="prev"><a href="blog/prev.html">Prev posts</a></li>
+                <li class="current"><a href="blog/current.html">Current posts</a></li>
+            </ul>
+        </div>
+    </div>
+-->
+    
+    <div class="wrap-section wrap-team">
+        <div id="team" class="container_16 section group">
+            <h1>Team</h1>
+            <h2 class="grid_16 intro"><em>The Manual is brought to you by these fine folks.</em></h2>
+            
+            <div class="group">
+                <div class="inner_4 teammate">
+                    <h3>Publisher</h3>
+                    <h2>Andy McMillan</h2>
+                    <p>Andy McMillan is the mind behind <a href="#">Build</a>, a small yet perfectly formed annual boutique design conference and week-long event in Belfast.</p>
+                </div>
+            
+                <div class="inner_4 teammate">
+                    <h3>Editor</h3>
+                    <h2>Carolyn Wood</h2>
+                    <p>Carolyn Wood is a writer, editor, and strategist through her company Pixelingo, is editor in chief of the upcoming typography journal, Codex, and serves on the editorial staff of A List Apart.</p>
+                </div>
+            
+                <div class="inner_4 teammate">
+                    <h3>Designer</h3>
+                    <h2>Jez Burrows</h2>
+                    <p>Jez Burrows is a designer, illustrator, and forest enthusiast based in Edinburgh. He has worked with top clients including The New York Times, Wired, GOOD, and Monocle.</p>
+                </div>    
+            
+                <div class="inner_4 elsewhere">
+                    <h3>Elsewhere</h3>
+                    <ul>
+                        <li>
+                            <h6>Twitter</h6>
+                            <p><a href="http://twitter.com/themanual/">Follow @themanual on Twitter</a></p>
+                        <li>
+                        <li>
+                            <h6>Kickstarter</h6>
+                            <p><a href="http://www.kickstarter.com/projects/goodonpaper/the-manual">See the original Kickstarter project</a></p>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="group">
+                <div class="inner_4 teammate">
+                    <p><a href="http://fiction.co">http://fiction.co</a></p>
+                </div>
+                <div class="inner_4 teammate">
+                    <p><a href="http://pixelingo.com">http://pixelingo.com</a></p>
+                </div>
+                <div class="inner_4 teammate">
+                    <p><a href="http://jezburrows.com">http://jezburrows.com</a></p>
+                </div>
+                <div class="inner_4">&nbsp;</div>
+            </div>
+            
+            <ul id="contact" class="grid_16">
+                <li class="email">Contact us <span class="mailme">andy at alwaysreadthemanual dot com</span></li>
+                <li class="join">
+                    Join our mailing list
+                    <form action="" method="post">
+                        <input type="email" name="email" id="email" />
+                        <input type="submit" name="subscribe" id="email-subscribe" class="btn" value="Subscribe" />
+                    </form>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    
+    <div class="wrap-footer">
+        <div id="footer" class="container_16 group">
+            
+            <div class="inner_4">
+                <em>Site design & development</em><br />
+                <a href="http://weightshift.com">Weightshift</a> &amp; <a href="http://www.kylemeyer.com">Kyle Meyer</a>
+            </div>
+            
+            <div class="inner_4">
+                <em>E-commerce development</em><br />
+                <a href="http://johnstonnorth.com/">Johnston North</a>
+            </div>
+            
+            <div class="inner_4">
+              &nbsp;
+<!--
+                <em>Policies</em><br />
+                <a href="./legal.html">Refunds / Privacy / TOS</a>
+-->
+            </div>
+            
+            <div class="inner_4">
+                Presented by Fiction<br />
+                &copy; 2011 Andy McMillan
+            </div>
+                        
+        </div>
+    </div>
+    
+<!--
+    <div class="wrap-coda">
+        <div id="coda" class="container_16"></div>
+    </div>
+-->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="_scripts/themanual.js"></script>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4e7767f4613f5d5913000001');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+            
+</body>
+</html>

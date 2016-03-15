@@ -1,0 +1,508 @@
+@media screen and (width: 320px) {
+  body { width: 320px!important; }
+}
+
+@media screen and (max-width: 480px) {
+	* { max-width: 100%; float: none!important; }
+	.mobile_only { display: block!important; }
+	.mobile_hide { display: none!important; }
+	
+	#fiction_logo { display: none!important; }
+
+	#button_subscribe, #nav li span, .home .fringe img, .flickr_feed, .button_register, .footer_twitter,
+	video, iframe, .conference_speaker, .practical_mixer { display: none!important; }
+	/* When schedule is formatted for mobile, remove .day_nav from this list */
+	.day_nav, #mast_manage, .day_nav .prev, .day_nav .next { display: none; }
+	.day_nav { width: auto!important; margin-left: 4%; margin-right: 4%; }
+	body {
+	 border-top: 4px solid #1fb4dd;
+		-webkit-text-size-adjust: none;
+		overflow: hidden;
+	}
+	
+	p, ul, ol, li {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	
+	h1 {
+		font-size: 24px;
+		letter-spacing: 4px;
+		line-height: 24px;
+	}
+	
+	section, .practical_events section {
+		padding-top: 24px;
+		padding-bottom: 24px;
+		width: auto;
+	}
+	
+	section:last-child {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+	
+	.home .intro div, .home .fringe div, section > div, section div.first, .event_meta, .event_time, .conference_topic, .footer_meta, .footer_miscellany, .footer_mailing_list,
+	.flights div, .hotels div, .hotels div.first, .dining div, .drinking div, .coffee div, .day_nav, .speakers li,
+	.hotels div.first, .dining div.first, .flights div.first, .drinking div.first, .coffee div.first, .hotel_prices, .hotel_details,
+	.fringe_event_block, .practical_events section, .week, .film .event_time, .sponsors {
+		width: 92%;
+		padding-left: 4%;
+		padding-right: 4%;
+		float: none;
+	}
+	
+	.fringe_event_block { margin: 0; padding-top: 24px!important; }
+	.fringe_event_block section { border-bottom: 1px dotted #e5e5e5!important; padding: 5px 0!important; }
+	.fringe_event_block section.first { border-top: 1px dotted #e5e5e5!important; }
+	.practical .fringe_event_block { padding-top:0px!important; }
+	.fringe_event_block h5, .fringe_event_block h4 { font-size: 12px; }
+	.fringe_event_block h5 { background: none; padding-bottom: 10px; }
+	.fringe_event_block h6 { line-height: 17px; }
+	
+	.speakers li:last-child {
+	 border-bottom: 1px solid #e5e5e5;
+	}
+		
+	.speakers li {
+		height: auto;
+		background: #fff url(/i/icon_edit_arrow.png) 99% 1px no-repeat;
+	 color: #1fb4dd;
+	 width: auto!important;
+	 height: auto!important;
+	 overflow: hidden;
+	 border: 0;
+	 border-top: 1px solid #e5e5e5;
+	 -moz-border-radius: 0;
+	 -webkit-border-radius: 0;
+	 border-radius: 0;
+	 line-height: 16px;
+	 font-weight: bold;
+	 margin: 0!important;
+	}
+	
+	.speakers li span {
+		color: #666;
+		position: relative;
+		bottom: auto;
+		left: auto;
+		font-weight: 400;
+		text-shadow: none;
+		font-size: 12px;
+	}
+	
+	.speakers li span a, .speakers li span a:hover, .speakers li span a:active {
+	 color: #666;
+	 display: block;
+	 	 padding: 13px 32px 13px 0;
+	}
+	
+	.speakers li:first-child {
+		display: none;
+	}
+	
+	section.fringe {
+	border-bottom: 0;
+	padding-bottom: 0;
+	}
+	
+	section.sponsors {
+	   border-top: 1px solid #e5e5e5;
+	 overflow: hidden;
+	 padding-top: 42px;
+	}
+	
+	.sponsors div {
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;border: 0;
+  
+	}
+		
+	.sponsors a {
+  width: 45%;
+  margin: 0 4.5% 10px 0;
+  padding: 0;
+  overflow: hidden;
+  float: none;
+  display: inline-block;
+	}
+	
+	.sponsors .sponsors_second {
+	padding-top: 0!important;
+	}
+	
+	.day_nav {
+		height: auto;
+		padding: 10px;
+	}
+	
+	.day_nav h4 {
+	 font-size: 14px;
+	}
+	
+	.flights div, .hotels div, .dining div, .drinking div, .coffee div {
+		margin-bottom: 24px;
+	}
+	
+	#wrapper .container {
+		padding-bottom: 24px;
+	}
+	
+	footer {
+		padding: 24px 0;
+	}
+	
+	.event_meta p:last-child {
+		margin: 0;
+	}
+	
+	.hotels p.hotel_details { padding-top: 12px; clear:both; }
+	
+	.event_meta, .event_time, .practical_events .event_time, .film .event_time, .home .fringe div, .home .intro div, .hotels div.first, .dining div.first, .flights div.first, .drinking div.first, .coffee div.first {
+		margin-bottom: 24px;
+		margin-top: 0;
+		border-top: 0;
+		padding-top: 0;
+	}
+	
+	.event_start {
+	 font-size: 11px;
+	}
+	
+	.event_time h6 {
+	 font-size: 11px;
+	}
+	
+	.event_link {
+	 color: #666;
+	 border-style: dotted;
+	}
+	
+	.event_time .event_link:last-child {
+	 border-bottom: 1px dotted #e5e5e5;
+	}
+	
+	.home .fringe {
+		padding-top: 24px!important;
+		position: relative;
+		border: 0;
+	}
+	
+	.home .fringe h4, .home .sponsors h4 {
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 top:0;
+	 padding-left: 4%;
+	 border-top: 0!important;
+	 border-bottom: 1px solid #e5e5e5;
+	}
+	
+	.home .fringe ul {
+		display: none;
+	}
+	
+	.home .fringe p {
+	padding-top: 17px;
+	}
+	
+	.event_time h2 {
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 6px;
+	}
+	
+	.conference_topic h4 {
+		margin-bottom: 4px;
+		padding-top: 0;
+	}
+	
+	.conference_topic p {
+		padding-right: 0;
+	}
+	
+	.practical_events {
+ 	  margin-bottom: 50px;
+	}
+	
+	.practical_events section, .practical_events section.first {
+	 border-top: 1px solid #e5e5e5;
+	}
+	
+	.practical_events section.last {
+	 border-bottom: 1px solid #e5e5e5;
+	 padding-bottom: 24px;
+	}
+	
+	.practical_events .event_time {
+	margin-bottom: 4px!important;
+	}
+	
+	.event_break {
+		padding-top: 14px;
+		padding-bottom: 10px;
+		background: #eee;
+	}
+	
+	.event_break h2, .event_break p {
+		margin-left: 7%;
+		margin-right: 7%;
+		width: auto;
+	}
+	
+	.event_break p {
+		margin-bottom: 6px
+	}
+	
+	.home .page_header, .page_header {
+		padding: 24px 0;
+	}
+	
+	.home .page_header {
+		padding-bottom: 0;
+		border: 0;
+	}
+	
+	.page_header h1 {
+	 padding-top: 6px;
+		padding-bottom: 9px;
+		background: none;
+		margin-bottom: 0px;
+	}
+	
+	.page_header p, .home .page_header p {
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0;
+		padding-left: 4%;
+		padding-right: 4%;
+		padding-bottom: 12px;
+	}
+	
+	.home .speakers {
+		padding-top: 0;
+		border: 0;
+	}
+	
+	.home .page_header p {
+		margin-bottom: 12px;
+	}
+	
+	.page_header h4 {
+		padding-bottom: 12px;
+		background: none;
+		font-size: 12px;
+	}
+	
+	.intro div, .footer_meta, .footer_mailing_list {
+		margin: 0 0 24px;
+	}
+	
+	#logo {
+	   padding-top: 0;
+		margin-top: 0;
+	}
+		
+	#nav {
+		position: absolute;
+		top: 111px;
+		left: 5%;
+		right: 5%;
+		width: 90%;
+	}
+
+	#nav #nav_group_one, #nav #nav_group_two {
+		position: relative;
+		left: 0;
+		right: 0;
+		top: auto;
+		margin: 0 auto;
+		width: 280px;
+	}
+	
+	#nav #nav_group_one {
+		top: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	
+	#nav #nav_group_two {
+		top: 6px;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	
+	#nav #nav_group_one li, #nav #nav_group_two li {
+		margin: 0 14px 0 0;
+		top: 0;
+		display: inline;
+		position: relative!important;
+		text-align: center;
+	}
+	
+	#nav #nav_group_two li {
+	 margin: 0 14px 0 0;
+	}
+	
+	#nav a { padding-bottom: 0; }
+	#nav .active a, #nav a:active, #nav a:hover { border: 0; color: #1fb4dd; }
+		
+	#masthead #mast_date_location {
+		top: 172px;
+		left: 0;
+		right: 0;
+		width: 85%;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 9px;
+		color: #999;
+	}
+	
+	#masthead .action_links {
+		top: 193px;
+		left: 0;
+		right: 0;
+		width: 85%;
+		text-align: center;
+		margin: 0 auto;
+		background: none;
+		font-size: 9px;
+		color: #999;
+	}
+	
+	#masthead .action_links a {
+	 color: #999!important;
+	}
+	
+	#masthead #mast_register {
+	 background: none!important;
+	 padding: 0!important;
+	}
+	
+	#masthead {
+		height: 228px;
+		padding-top: 28px;
+		background: #181819;
+	}
+	
+	.privacy section {
+		width: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	/* Schedule */
+	.schedule #wrapper .container, .conference #wrapper .container, .fringe #wrapper .container, .film #wrapper .container {
+	 margin: 0;
+	 padding: 0;
+	}
+	
+	.home #wrapper .container, .practical #wrapper .container, .workshops #wrapper .container {
+	 border-bottom: 1px solid #e5e5e5;
+	}
+	
+	.headers {
+	 display: none;
+	}
+	
+	.week {
+	 background: none;
+	 height:auto!important;
+	 margin: 0;
+	 width: 100%;
+	 padding: 0;
+	}
+	
+	.day {
+	 width: 100%;
+	 height: auto!important;
+	 background: none;
+	 float: none;
+	 position: relative;
+	 border-bottom: 1px solid #e5e5e5;
+	}
+	
+	.day a, .day a.tba {
+	 position: relative!important;
+	 left: auto!important;
+	 right: auto!important;
+	 top: auto!important;
+	 bottom: auto!important;
+	 background: #fff url(/i/icon_edit_arrow.png) 99% 7px no-repeat;
+	 color: #1fb4dd;
+	 width: auto!important;
+	 height: auto!important;
+	 overflow: hidden;
+	 border: 0;
+	 border-top: 1px solid #e5e5e5;
+	 -moz-border-radius: 0;
+	 -webkit-border-radius: 0;
+	 border-radius: 0;
+	 padding: 11px 32px 11px 13px;
+	 line-height: 16px;
+	 font-weight: bold;
+	}
+	
+	.day a.tba {
+	 color: #999!important;
+	}
+	
+	.day a span strong {
+	 color: #999;
+	 display: block;
+	 float: left;
+	 padding: 0;
+	 font-weight: normal;
+	 font-size: 11px;
+	}
+	
+	.day a span {
+	 padding: 0;
+	 display: inline;
+	 line-height: 16px;
+	}
+	
+	.day a:hover, .day a:active {
+	 color: #000!important;
+	 background: #fff!important;
+	}
+	
+	.day h6, .speakers_header, .home .fringe h4, .home .sponsors h4 {
+		font-family: "proxima-nova-1","proxima-nova-2", 'Helvetica Neue', Arial, sans-serif;
+
+	 background: #eee!important;
+	 text-transform: uppercase;
+	 letter-spacing: 1px;
+	 font-weight: bold;
+	 height: 23px;
+	 line-height: 23px;
+	 color: #666;
+	 padding: 0 13px;
+	 font-size: 11px;
+	}
+	
+	.speakers_header, .home .fringe h4, .home .sponsors h4 {text-align:left!important;padding: 0 13px!important; margin: 0;border-top: 1px solid #e5e5e5;}
+	
+	.day h6.first {
+	 border-top: 1px solid #e5e5e5;
+	}
+	
+	/* Practical */
+	.practical_events section, .prac_left, .prac_right {
+	 width: auto!important;
+	}
+	section.group_discussions, section.on_your_own {
+  height: auto!important;
+  }
+  
+  section.play {
+  border-bottom: 1px solid #e5e5e5!important;
+  padding-bottom: 24px!important;
+  }
+  
+	
+}
